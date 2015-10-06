@@ -4,45 +4,63 @@
 @charset "utf-8";
 
 
+// Apparently Jekyll's SASS doesn't have these functions...
+// Add percentage of white to a color
+@function tint($color, $percent)
+{
+    @return mix(white, $color, $percent);
+}
+// Add percentage of black to a color
+// @function shade($color, $percent)
+// {
+//     @return mix(black, $color, $percent);
+// }
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+// RADISH
+$font-size-base: 16px;
+@import "arcane/base";
+$nav-color: $link-color;
+
+// Our variables ++ RADISH: Mine now, mwahahaha and such
+$base-font-family: $font-stack-arcane-base;
+$base-font-size:   $font-size-base;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: $line-height-computed;
 
-$spacing-unit:     30px;
+$spacing-unit:     15px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// $text-color:       #111;
+$background-color: black;
+$content-bg-color: mix(black, #03305A, 50%);
+$brand-color:      #FF9933;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
-$on-palm:          600px;
 $on-laptop:        800px;
-
+$on-palm:          600px;
 
 
 // Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
+// @include media-query($on-palm)
+// {
+//     .wrapper 
+//     {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
+@mixin media-query($device) 
+{
+    @media screen and (max-width: $device) 
+    {
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -50,3 +68,12 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// RADISH: the rest of Arcane css
+@import "arcane/helpers";
+
+@import "arcane/reset";
+@import "arcane/fix";
+
+@import "arcane/components";
+@import "arcane/flavors";

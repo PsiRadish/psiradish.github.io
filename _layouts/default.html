@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
-
+  
   {% include head.html %}
-
+  
   <body>
-
+    
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    
+    <!-- <hr> -->
+    
+    <main class="page-content">
+      <div class="wrapper portal flavor-blue">
         {{ content }}
       </div>
-    </div>
-
+    </main>
+    
+    <!-- <hr> -->
+    
     {% include footer.html %}
-
+  
   </body>
-
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script type="text/javascript" src="{{ site.baseurl }}/js/script.js"></script>
 </html>
