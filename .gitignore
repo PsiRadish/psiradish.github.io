@@ -1,2 +1,4 @@
 _site/
+__site/
 .sass-cache/
+Thumbs.db

@@ -30,14 +30,10 @@ layout: default
   <article class="post-content">
     <p>I am a front-leaning full-stack developer who enjoys the merging of art and science that comes with full-stack web development. Here are some of the <span class="egg" title="What decides of something &ldquo;is a word&rdquo;, anyway?">awesomer</span> things I've done.</p>
     
-    <h4>Bequarked</h4>
-    <p>Bequarked stuff.</p>
-    
-    <h4>Pizza'n Harmony</h4>
-    <p>Peazza stuff.</p>
-    
-    <h4>Etc.</h4>
-    <p>More stuff.</p>
+    {% for item in site.folio_items %}
+      <a href="{{ item.url | prepend: site.baseurl }}"><h4>{{ item.title }}</h4></a>
+      <p>{{ item.brief }}</p>
+    {% endfor %}
     
   </article>
 

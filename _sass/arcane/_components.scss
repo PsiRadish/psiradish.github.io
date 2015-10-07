@@ -106,6 +106,30 @@ hr
     margin: 1em auto;
 }
 
+b, strong
+{
+    font-weight: bold;
+}
+i, em
+{
+    font-style: italic;
+}
+
+ul
+{
+    padding-left: 1em;
+    
+    > li::before
+    {
+        content: "•";
+        
+        position: relative;
+        display: inline-block;
+        right: 1em;
+        width: 0;
+    }
+}
+
 a:not(.button)
 {
     @include glow-idle-text($link-color);
@@ -142,6 +166,20 @@ a:not(.button)
     &:active
     {
         @include glow-strong-text($link-color);
+    }
+}
+
+a > img
+{
+    @include spell-box($link-color);
+    
+    &:hover, &:focus
+    {
+        @include glow-mild-border($link-color);
+    }
+    &:active
+    {
+        @include glow-strong-border($link-color);
     }
 }
 

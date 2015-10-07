@@ -1,0 +1,10 @@
+---
+title: Technology Used
+permalink: /tech/
+---
+
+<ul>
+{% for tech in site.data.technologies %}
+  <li><a href="{{ tech.link }}">{{ tech.name }}</a>{% if tech.comment %} {{ tech.comment }}{% endif %}</li>
+{% endfor %}
+</ul>

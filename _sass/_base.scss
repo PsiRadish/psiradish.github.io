@@ -118,7 +118,7 @@ a
 
 
 /**
- * Blockquoteses
+ * Blockquotes
  */
 blockquote 
 {
@@ -201,7 +201,7 @@ pre
     }
 }
 
-main.page-content .wrapper
+main.page-content .wrapper:not(.resume)
 {
     background-color: $content-bg-color;
 }

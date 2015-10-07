@@ -10,14 +10,22 @@
       </a>
 
       <div class="trigger">
-        {% comment %}
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        {% endcomment %}
-        <a class="page-link" href="/resume">Résumé</a>
+        <a class="page-link" href="/resume">
+          <span class="fa-stack resume-icon">
+            <i class="fa fa-file-o fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x"></i>
+          </span>
+          Résumé
+        </a>
+        <!-- 
+          {% comment %}
+          {% for page in site.pages %}
+            {% if page.title %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+          {% endcomment %}
+        -->
       </div>
     </nav>
 

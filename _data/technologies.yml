@@ -1,0 +1,9 @@
+- name: Jekyll
+  link: "http://jekyllrb.com/"
+- name: jQuery
+  link: "http://jquery.com/"
+- name: Creddle (eventually)
+  link: "http://creddle.io/"
+- name: Emoji One
+  link: "http://emojione.com/"
+  comment: ":stuck_out_tongue_winking_eye:"

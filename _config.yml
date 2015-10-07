@@ -9,9 +9,24 @@ url: "http://psiradish.github.io" # the base hostname & protocol for your site
 # twitter_username: himitsu!
 github_username:  PsiRadish
 linkedin: https://www.linkedin.com/in/KyleFiegener
+collections:
+  folio_items:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "folio_items"
+    values:
+      layout: "folio_item"
 
 # Build settings
 markdown: kramdown
+destination: __site
 
 # Sass settings
 sass:
