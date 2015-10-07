@@ -45,4 +45,12 @@ $(function()
         var converted = emojione.toImage(original);
         $(this).html(converted);
     });
+    
+    // Resume issue in chrome
+    var chromeSpot = $('.dammit-chrome');
+    console.log(chromeSpot);
+    if (chromeSpot.length > 0 && window.chrome)
+    {
+        chromeSpot.html("<i>Viewing in Chrome may cause my list bullets to bug out (will fix soon).</i>");
+    }
 });

@@ -1,9 +1,12 @@
 - name: Jekyll
   link: "http://jekyllrb.com/"
+- name: Font Awesome
+  link: "http://fortawesome.github.io/Font-Awesome/"
 - name: jQuery
   link: "http://jquery.com/"
-- name: Creddle (eventually)
+- name: Creddle
   link: "http://creddle.io/"
+  comment: (and oh how I'm sorry)
 - name: Emoji One
   link: "http://emojione.com/"
   comment: ":stuck_out_tongue_winking_eye:"

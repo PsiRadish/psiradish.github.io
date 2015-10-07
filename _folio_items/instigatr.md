@@ -1,54 +1,46 @@
 ---
 title: Instigatr
-brief: A vaguely physics-themed puzzle game created entirely in frontend Javascript and HTML.
+brief: <b>Team Project</b> – Live debate app allowing the user to spectate on debates, or choose a side and join the queue to be allowed to speak.
 permalink: /instigatr/
-screenshot: bequarked.jpg
-demo_url: "http://psiradish.github.io/Bequarked/"
-repo_url: "http://github.com/PsiRadish/Bequarked"
+screenshot: instigatr.jpg
+demo_url: "https://instigatr.herokuapp.com/"
+repo_url: "https://github.com/PsiRadish/Instigatr"
 ---
 
-### How to Play
+###Contributors:
+[PsiRadish](https://github.com/PsiRadish)  
+[sorenrehkopf](https://github.com/sorenrehkopf)  
+[candlewoodtoby](https://github.com/candlewoodtoby)  
+[mustafa206](https://github.com/mustafa206)  
 
-+ Click on 2 adjacent quarks to try swapping their positions.
-+ The swap will be successful if it results in a *match* of 3 or more quarks vertically or horizontally.
-+ A failed swap has no consequences.
-+ Matched quarks will disappear from the board (if you've played Bejewelled, this should sound pretty familiar so far).
-+ The arrow direction on matched quarks indicates the direction surrounding quarks will fall to fill the space left behind.
-+ Quarks only match if they have the *same arrow direction and ring color*.
-+ The game ends after 5 successful swaps, at which point it will say you've won. Don't get too excited.
+###Technologies Used:
+  1. Node.js + Express.js
+  2. Socket.IO
+  3. PostGreSQL
+  4. Sequelize
+  5. CSS  
+        + InK
+        + Sass
+        + Compass
+  6. jQuery
+  7. jQuery custom content scroller plug-in
+  8. New York Times API
+  
+###General Approach Taken:
+  The team conducted its first meeting brainstorming ideas until finally deciding on a debate app concept.
+  We then produced wireframes, model diagrams, a development roadmap and code skeleton. Each member was assigned a
+  specific section of the web application to work on for the duration of development. Team met frequently to integrate
+  and merge their respective sections of code and to work out any conflicts.
+  
+###Responsibilites/Challenges:
+*Git:* I was in charge of maintaining our GitHub repository and merging pull requests, and I did the first few merges poorly, ending up with two of every middleware
+(which was probably the cause of some login problems we were having at the time). Towards the end, my git repository was also corrupted, causing git command-line to hang
+and GitHub for Windows to crash at the sight of it. Conveniently, this was shortly after I'd pushed to GitHub, so I didn't lose anything when wiping out the local repo
+and recloning. Inconveniently, I really would have rather spent that time sleeping.  
 
-### Major Challenges
+*Socket.IO + Express.js:* Getting these two to talk to each other (instead of merely co-habitating on the same server) can be a bit of an ordeal; the details of which
+change significantly with version number. Once I finally searched specifically for the versions we use, I found a method that worked, but some time was still wasted
+trying to adapt old methods to the present.  
 
-It's not just gravity.  It's...
-
-#### *Variable*-melon-farming-Gravity
-
-Take a look at this scenario:  
-![Quite a pickle.]({{ site.baseurl }}/img/beq-conflict.jpg)  
-
-Gravity just had to "take turns" here. And figuring out how it should do that, and then making it happen*, was not easy.  
-<small>*Actually, it usually wasn't "and then" so much as "at the same time as".</small>  
-
-And then you have this:  
-![Oh fuck.]({{ site.baseurl }}/img/beq-explosive.jpg)  
-
-No amount of taking turns can make this work. So I decided it would explode, taking out one or more entire lines of the board. Well, someday, anyway. For now it just breaks the game :unamused:  
-
-### Still To Do
-
-+ Iron out some bugs.
-+ Fix up how the instructions are presented (so they're not squeezed into a rather small space).
-+ Figure out how a game of Bejeweled ends and shamelessly copy it.
-+ Animate the scoring so it's actually noticeable.
-+ Show lingering "ghost arrows" in squares after quarks are matched so its easier to figure out what's going on when holes are "waiting their turn" to be filled.
-+ Implement the previously-mentioned "gravity bomb" scenario.
-+ Fancy up the animations further. With, like, flashes and stuff.
-
-### Technology Used
-
-+ *[jQuery](http://jquery.com/ "write less, do more.")*  
-  For DOM manipulation, naturally, but also custom events. Animation is all CSS, though.
-+ *[FitText.js](http://fittextjs.com/ "A jQuery plugin for inflating web type")*  
-  For exactly what it says on the tin. Would be nice if they didn't obfuscate the functionality with this "compressor" nonsense and just let me pass in a percentage, though.
-+ *[Async.js](https://github.com/caolan/async "Higher-order functions and common patterns for asynchronous code")*  
-  Used on the front-end for knowing when *all* the current gravity animations (which may not all be the same length of time) have finished before doing something else. Could probably find some other places to use it, too. Async is badass :sunglasses:  
+*Chat Queue:* Implementing this required spending a long time deep in code before there was anything to test 'back on the surface'. And you can't talk underwater. Ask
+me how its going and my answer would be little more articulate than "blub blub blub".
