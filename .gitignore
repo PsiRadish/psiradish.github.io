@@ -1,4 +1,5 @@
 _site/
 __site/
 .sass-cache/
+.idea/
 Thumbs.db

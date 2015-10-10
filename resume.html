@@ -10,213 +10,19 @@ layout: null
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/resume-main.css" media="all">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/resume-print.css" media="all">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/resume-main.css" media="all">-->
+  <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/resume-print.css" media="all">-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/resume-main.css" media="all">
+  <link rel="stylesheet" href="/css/resume-print.css" media="all">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/js/script.js"></script>
-  <style type="text/css">
-    
-    .font-primary
-    { font-family : Consolas, Monaco, Monofur, monospace !important; }
-    
-    .font-secondary
-    { font-family : Corbel, Gill Sans, Lato, Gill Sans MT, Lucida Grande, Lucida Sans, Trebuchet MS, sans-serif !important; }
-    
-    .bg-primary
-    { background-color : #03305A; }
-    
-    .grayscale .bg-primary
-    { background-color : #292929; }
-    
-    .fg-primary
-    { color : #03305A; }
-    
-    .grayscale .fg-primary
-    { color : #292929; }
-    
-    .fg-primary .contact-icon-link
-    { color : #03305A; }
-    
-    .grayscale .fg-primary .contact-icon-link
-    { color : #292929; }
-    
-    .fg-secondary
-    { color : #FF9933; }
-    
-    .grayscale .fg-secondary
-    { color : #A7A7A7; }
-    
-    .fg-secondary .contact-icon-link
-    { color : #FF9933; }
-    
-    .grayscale .fg-secondary .contact-icon-link
-    { color : #A7A7A7; }
-    
-    .fg-primary-light .contact-icon-link
-    { color : #E4E6E8; }
-    
-    .grayscale .fg-primary-light .contact-icon-link
-    { color : #E5E5E5; }
-    
-    .fg-primary-dark .contact-icon-link
-    { color : #01182D; }
-    
-    .grayscale .fg-primary-dark .contact-icon-link
-    { color : #141414; }
-    
-    .fg-secondary-light .contact-icon-link
-    { color : #F0EBE6; }
-    
-    .grayscale .fg-secondary-light .contact-icon-link
-    { color : #EBEBEB; }
-    
-    .fg-secondary-dark
-    { color : #7F4C19; }
-    
-    .grayscale .fg-secondary-dark
-    { color : #535353; }
-    
-    .fg-secondary-dark .contact-icon-link
-    { color : #7F4C19; }
-    
-    .grayscale .fg-secondary-dark .contact-icon-link
-    { color : #535353; }
-    
-    .hv-primary .contact-icon-link.hover-enabled:hover
-    { color : #03305A; }
-    
-    .grayscale .hv-primary .contact-icon-link.hover-enabled:hover
-    { color : #292929; }
-    
-    .hv-secondary .contact-icon-link.hover-enabled:hover
-    { color : #FF9933; }
-    
-    .grayscale .hv-secondary .contact-icon-link.hover-enabled:hover
-    { color : #A7A7A7; }
-    
-    .hv-primary-light .contact-icon-link.hover-enabled:hover
-    { color : #E4E6E8; }
-    
-    .grayscale .hv-primary-light .contact-icon-link.hover-enabled:hover
-    { color : #E5E5E5; }
-    
-    .hv-primary-dark .contact-icon-link.hover-enabled:hover
-    { color : #01182D; }
-    
-    .grayscale .hv-primary-dark .contact-icon-link.hover-enabled:hover
-    { color : #141414; }
-    
-    .hv-secondary-light .contact-icon-link.hover-enabled:hover
-    { color : #F0EBE6; }
-    
-    .grayscale .hv-secondary-light .contact-icon-link.hover-enabled:hover
-    { color : #EBEBEB; }
-    
-    .hv-secondary-dark .contact-icon-link.hover-enabled:hover
-    { color : #7F4C19; }
-    
-    .grayscale .hv-secondary-dark .contact-icon-link.hover-enabled:hover
-    { color : #535353; }
-    
-    .document-container:hover [markdown-viewer] a, .document-container:hover .link a
-    { color : #02203C; }
-    
-    .document-container:hover [markdown-viewer] a, .document-container:hover .link a
-    { text-decoration : underline; }
-    
-    .document-container:hover [markdown-viewer] a:hover, .document-container:hover .link a:hover
-    { color : #01182D; }
-    
-    .document-container:hover .grayscale [markdown-viewer] a, .document-container:hover .grayscale .link a
-    { color : #1B1B1B; }
-    
-    .document-container:hover .grayscale [markdown-viewer] a:hover, .document-container:hover .grayscale .link a:hover
-    { color : #141414; }
-    
-    .fg-white
-    { color : #FFF; }
-    
-    .fg-white .contact-icon-link
-    { color : #FFF; }
-    
-    /*ul.skills-list > li
-    {
-      display: block;
-    }*/
-    
-    /*.nameplate > .nameplate-name,
-    .nameplate > .nameplate-occupation
-    {
-      display: inline-block;
-      vertical-align: bottom;
-      width: 50%;
-    }*/
-    
-    /*ul
-    {
-      margin-bottom: 10px;
-    }*/
-    
-    ul.contact-list
-    {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .contact-list-container
-    {
-      display: inline-block;
-    }
-    /* Left-aligned center */
-    .contact-list-container + .contact-list-container:not(:last-child)
-    {
-      position: relative;
-      left: 16.66665%;
-    }
-    .contact-list-container + .contact-list-container:not(:last-child) > .contact-list
-    {
-      display: inline-block;
-      position: relative;
-      left: -50%;
-    }
-    /* Right-aligned */
-    .contact-list-container:last-child
-    {
-      text-align: right;
-    }
-    
-    /* floats to align everything along the top edge */
-    ul.skills-list, ul.skills-list > li
-    {
-      float: left;
-    }
-    ul.skills-list > li
-    {
-      width: 100%;
-    }
-    ul.skills-list > li > b
-    {
-      float: left;
-      width: calc(20% + 1em);
-    }
-    ul.skills-list > li > span
-    {
-      float: left;
-      width: calc(80% - 1em);
-    }
-    
-    /*.employer-row
-    {
-      font-weight: bold;
-    }*/
-    
-  </style>
   <title>Kyle Fiegener's Resume</title>
 </head>
 <body>
 
-<div class="page page-1" style="height: 1100px !important;overflow:hidden;">
+<div class="page page-1">
   <div class="page-content" style="margin-left: 35px; margin-right: 35px; height: 1085px;">
     <div class="row top-header bg-primary">
       <div class="section-1 col-md-12">
@@ -224,7 +30,7 @@ layout: null
           <div style="font-size: 42px;" class="font-primary nameplate-name">
             <span class="nameplate-name-value fg-white bold">Kyle&nbsp;</span><span class="nameplate-name-value fg-secondary bold">Fiegener</span>
           </div>
-          <div style="font-size: 24px;" class="font-primary nameplate-occupation ng-isolate-scope fg-white float-right-justify">
+          <div style="font-size: 24px;" class="font-primary nameplate-occupation fg-white float-right-justify">
             <span class="nameplate-occupation-value">Web Developer</span>
           </div>
         </div>
@@ -232,7 +38,7 @@ layout: null
       <div class="section-2 col-md-12 fg-secondary hv-secondary-light cr-c-horizontal">
         <div style="font-size: 14px;" class="row contact-container font-secondary">
           
-          <div class="col-xs-4 contact-list-container"><ul class="contact-list">
+          <div class="col-md-4 contact-list-container"><ul class="contact-list">
             <li>
               <a href="mailto:KyleFiegener@gmail.com" target="blank" class="contact-icon-link hover-enabled">
                 <i class="fa fa-envelope contact-icon"></i>
@@ -247,7 +53,7 @@ layout: null
             </li>
           </ul></div>
           
-          <div class="col-xs-4 contact-list-container"><ul class="contact-list">
+          <div class="col-md-4 contact-list-container"><ul class="contact-list">
             <li>
               <a href="http://www.github.com/PsiRadish" target="blank" class="contact-icon-link hover-enabled">
                 <i class="fa fa-github contact-icon"></i>
@@ -255,21 +61,20 @@ layout: null
               </a>
             </li>
             <li>
-              <a href="http://linkedin.com/https://www.linkedin.com/in/KyleFiegener" target="blank" class="contact-icon-link hover-enabled">
+              <a href="https://www.linkedin.com/in/KyleFiegener" target="blank" class="contact-icon-link hover-enabled">
                 <i class="fa fa-linkedin-square contact-icon"></i>
                 <span class="icon-link-text">linkedin.com/in/KyleFiegener</span>
               </a>
             </li>
           </ul></div>
           
-          <div class="col-xs-4 contact-list-container"><ul class="contact-list">
+          <div class="col-md-4 contact-list-container"><ul class="contact-list">
             <li>
               <span class="contact-icon-link">
                 <i class="fa fa-map-marker contact-icon"></i>
                 <span class="icon-link-text">Kent, WA</span>
               </span>
             </li>
-            <li class="dammit-chrome"></li>
             <!--<li>
               <span class="contact-icon-link">
                 <i class="fa fa-phone contact-icon"></i>
@@ -283,239 +88,239 @@ layout: null
     
     <div style="height: 979px;" class="row right-panel-wrapper">
       <div style="height: 979px;" class="section-3 fill col-md-8">
-          <section class="row">
-            <div class="col-md-12">
-              <div class="row section-header header-underline">
-                <div class="font-primary col-md-12 fg-primary uppercase medium">
-                  <span class="bold" style="letter-spacing: 0px;">
-                    Summary
-                  </span>
-                </div>
-                <div class="col-md-12">
-                  <div class="section-header-underline bg-primary underline-full underline-thin"></div>
-                </div>
-              </div>
-              <div class="item-container header-padding">
-                <div class="content-group">
-                  <div style="font-size: 14px;" class="font-secondary content-paragraph ng-pristine ng-untouched ng-valid">
-                    <p>Web developer who enjoys the intersection between art and science that comes with full-stack development.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="row">
-            <div class="col-md-12">
-              <div class="row section-header header-underline">
-                <div class="font-primary col-md-12 fg-primary uppercase medium">
-                  <span class="bold" style="letter-spacing: 0px;">
-                    <span>Skills</span>
-                  </span>
-                </div>
-                <div class="col-md-12">
-                  <div class="section-header-underline bg-primary underline-full underline-thin"></div>
-                </div>
-              </div>
-              
-              <div class="skills-container">
-                <span style="font-size: 16px;" class="font-primary sg-name bold">
-                  <i>Web Development</i>
+        <section id="summary" class="row">
+          <div class="col-md-12">
+            <div class="row section-header header-underline">
+              <div class="font-primary col-md-12 fg-primary uppercase medium">
+                <span class="bold" style="letter-spacing: 0px;">
+                  Summary
                 </span>
-                <ul class="skills-list font-secondary" style="font-size: 14px;">
-                  <li><b>Languages</b><span>JavaScript, Ruby, Python, HTML5, CSS3, Sass</span></li>
-                  <li><b>Frameworks</b><span>Express.js, Ruby on Rails, AngularJS, Flask, Jekyll, Sails</span></li>
-                  <li><b>Databases/ORMs</b><span>PostgreSQL, MongoDB, ActiveRecord, Sequelize, SQLAlchemy, Waterline</span></li>
-                  <li><b>Other</b><span>Git/GitHub, Heroku, jQuery, AJAX, Socket.IO, Bootstrap, InK, Semantic UI</span></li>
-                </ul>
               </div>
-              <div class="skills-container">
-                <span style="font-size: 16px;" class="font-primary sg-name bold">
-                  <i>Other</i>
-                </span>
-                <ul class="skills-list font-secondary" style="font-size: 14px;">
-                  <li><b>Languages</b><span>C#, Java, C++</span></li>
-                  <li><b>Graphics</b><span>Photoshop, GIMP</span></li>
-                  <li><b>Playtime</b><span>Reading, Gaming, Game Modding</span></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section style="margin-top: 10px;" class="row">
-            <div>
               <div class="col-md-12">
-                <div>
-                  <div class="ng-isolate-scope">
-                    <div class="row section-header header-underline">
-                      <div class="font-primary col-md-12 fg-primary uppercase medium">
-                        <span class="bold" style="letter-spacing: 0px;">
-                          Employment
-                        </span>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="section-header-underline bg-primary underline-full underline-thin">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-container row header-padding">
-                    <div class="col-md-12">
-                      <div class="content-group">
-                        <table class="cr-ordering-table crd-row">
-                          <tbody>
-                          
-                          <tr class="employer-row">
-                            <td class="crd-col">
-                              <b style="font-size: 19px;" class="font-primary inline-block item-name">General Assembly</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block employer-location">
-                                <span style="font-size: 16px;" class="font-primary">Seattle, Washington</span>
-                              </div>
-                            </td>
-                          </tr>
-                          
-                          <tr style="font-size: 16px;">
-                            <td class="crd-col">
-                              <b class="employer-title font-secondary inline-block">Web Development Immersive Student</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block item-date">
-                                <i class="date font-secondary cr-date" >
-                                  June 2015—September 2015
-                                </i>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                        <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-pristine ng-untouched ng-valid ng-isolate-scope">
-                          <p>50+ hours per week immersive coding bootcamp learning front- and back-end web development. Individual and team projects building web applications in Ruby on Rails, Node.js, AngularJS, and Flask.</p>
-                        </div>
-                      </div>
-                      <div class="content-group">
-                        <table class="cr-ordering-table crd-row">
-                          <tbody>
-                          
-                          <tr class="employer-row">
-                            <td class="crd-col">
-                              <b style="font-size: 19px;" class="font-primary inline-block item-name">Flexasoft</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block employer-location">
-                                <span style="font-size: 16px;" class="font-primary">Redmond, Washington</span>
-                              </div>
-                            </td>
-                          </tr>
-                          
-                          <tr style="font-size: 16px;">
-                            <td class="crd-col">
-                              <b class="employer-title font-secondary inline-block" >Consumer Acceptance Tester</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block item-date">
-                                <i class="date font-secondary cr-date" >
-                                  August 2013—June 2015
-                                </i>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                        <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-pristine ng-untouched ng-valid ng-isolate-scope">
-                          <p>Performed
-                            various test cases on the client's hardware and software; mostly
-                            software on Xbox One, but also MSN.com on different browsers and mobile
-                            devices.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="content-group">
-                        <table class="cr-ordering-table crd-row">
-                          <tbody>
-                          <tr style="font-size: 16px;">
-                            <td class="crd-col">
-                              <b class="employer-title font-secondary inline-block">Data Analyst</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block item-date">
-                                <i class="date font-secondary cr-date">
-                                  October 2013—April 2014
-                                </i>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                        <div style="font-size: 14px;" class="font-secondary content-paragraph description">
-                          <p>
-                            Trusted with scrubbing test data, making sure it followed proper testing
-                            procedure and met standards of believability, readability, and
-                            professionalism; fixing what mistakes could be fixed.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="content-group">
-                        <table class="cr-ordering-table crd-row">
-                          <tbody>
-                          
-                          <tr class="employer-row">
-                            <td class="crd-col">
-                              <b style="font-size: 19px;" class="font-primary inline-block item-name">Volt</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block employer-location">
-                                <span style="font-size: 16px;" class="font-primary">Redmond, Washington</span>
-                              </div>
-                            </td>
-                          </tr>
-                          
-                          <tr style="font-size: 16px;">
-                            <td class="crd-col">
-                              <b class="employer-title font-secondary inline-block">Functional Game Tester</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block item-date">
-                                <i class="date font-secondary cr-date" >
-                                  November 2011—August 2013
-                                </i>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                        <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-pristine ng-untouched ng-valid ng-isolate-scope">
-                          <p>Graduated from hardware testing to testing software submitted for approval and release on the Xbox 360.</p>
-                        </div>
-                      </div>
-                      <div class="content-group">
-                        <table class="cr-ordering-table crd-row">
-                          <tbody>
-                          <tr style="font-size: 16px;">
-                            <td class="crd-col">
-                              <b class="employer-title font-secondary inline-block">Hardware Game Tester</b>
-                            </td>
-                            <td class="crd-col align-right">
-                              <div class="inline-block item-date">
-                                <i class="date font-secondary cr-date" >
-                                  March 2011—November 2011
-                                </i>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                        <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-pristine ng-untouched ng-valid ng-isolate-scope">
-                          <p>Performed routine test cases on the Xbox 360 hardware and software.</p>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                </div>
-              
+                <div class="section-header-underline bg-primary underline-full underline-thin"></div>
               </div>
             </div>
-          </section>
+            <div class="item-container header-padding">
+              <div class="content-group">
+                <div style="font-size: 14px;" class="font-secondary content-paragraph">
+                  <p>Web developer who enjoys the intersection between art and science that comes with full-stack development.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills" class="row">
+          <div class="col-md-12">
+            <div class="row section-header header-underline">
+              <div class="font-primary col-md-12 fg-primary uppercase medium">
+                <span class="bold" style="letter-spacing: 0px;">
+                  <span>Skills</span>
+                </span>
+              </div>
+              <div class="col-md-12">
+                <div class="section-header-underline bg-primary underline-full underline-thin"></div>
+              </div>
+            </div>
+            
+            <div class="skills-container">
+              <span style="font-size: 16px;" class="font-primary sg-name bold">
+                <i>Web Development</i>
+              </span>
+              <ul class="skills-list font-secondary" style="font-size: 14px;">
+                <li><b>Languages</b><span>JavaScript, Ruby, Python, HTML5, CSS3, Sass</span></li>
+                <li><b>Frameworks</b><span>Express.js, Ruby on Rails, AngularJS, Flask, Jekyll, Sails</span></li>
+                <li><b>Databases/ORMs</b><span>PostgreSQL, MongoDB, ActiveRecord, Sequelize, SQLAlchemy, Waterline</span></li>
+                <li><b>Miscellaneous</b><span>Git/GitHub, Heroku, jQuery, AJAX, Socket.IO, Bootstrap, InK, Semantic UI</span></li>
+              </ul>
+            </div>
+            <div class="skills-container">
+              <span style="font-size: 16px;" class="font-primary sg-name bold">
+                <i>Other</i>
+              </span>
+              <ul class="skills-list font-secondary" style="font-size: 14px;">
+                <li><b>Languages</b><span>C#, Java, C++</span></li>
+                <li><b>Graphics</b><span>Photoshop, GIMP</span></li>
+                <li><b>Playtime</b><span>Reading, Gaming, Game Modding</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="employment" style="margin-top: 10px;" class="row">
+          <div>
+            <div class="col-md-12">
+              <div>
+                <div class="">
+                  <div class="row section-header header-underline">
+                    <div class="font-primary col-md-12 fg-primary uppercase medium">
+                      <span class="bold" style="letter-spacing: 0px;">
+                        Employment
+                      </span>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="section-header-underline bg-primary underline-full underline-thin">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-container row header-padding">
+                  <div class="col-md-12">
+                    <div class="content-group">
+                      <table class="cr-ordering-table crd-row">
+                        <tbody>
+                        
+                        <tr class="employer-row">
+                          <td class="crd-col">
+                            <b style="font-size: 19px;" class="font-primary inline-block item-name">General Assembly</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block employer-location">
+                              <span style="font-size: 16px;" class="font-primary">Seattle, Washington</span>
+                            </div>
+                          </td>
+                        </tr>
+                        
+                        <tr style="font-size: 16px;">
+                          <td class="crd-col">
+                            <b class="employer-title font-secondary inline-block">Web Development Immersive Student</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block item-date">
+                              <i class="date font-secondary cr-date" >
+                                June 2015—September 2015
+                              </i>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div style="font-size: 14px;" class="font-secondary content-paragraph description">
+                        <p>50+ hours per week immersive coding bootcamp learning front- and back-end web development. Individual and team projects building web applications in Ruby on Rails, Node.js, AngularJS, and Flask.</p>
+                      </div>
+                    </div>
+                    <div class="content-group">
+                      <table class="cr-ordering-table crd-row">
+                        <tbody>
+                        
+                        <tr class="employer-row">
+                          <td class="crd-col">
+                            <b style="font-size: 19px;" class="font-primary inline-block item-name">Flexasoft</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block employer-location">
+                              <span style="font-size: 16px;" class="font-primary">Redmond, Washington</span>
+                            </div>
+                          </td>
+                        </tr>
+                        
+                        <tr style="font-size: 16px;">
+                          <td class="crd-col">
+                            <b class="employer-title font-secondary inline-block" >Consumer Acceptance Tester</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block item-date">
+                              <i class="date font-secondary cr-date" >
+                                August 2013—June 2015
+                              </i>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div style="font-size: 14px;" class="font-secondary content-paragraph description">
+                        <p>Performed
+                          various test cases on the client's hardware and software; mostly
+                          software on Xbox One, but also MSN.com on different browsers and mobile
+                          devices.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content-group">
+                      <table class="cr-ordering-table crd-row">
+                        <tbody>
+                        <tr style="font-size: 16px;">
+                          <td class="crd-col">
+                            <b class="employer-title font-secondary inline-block">Data Analyst</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block item-date">
+                              <i class="date font-secondary cr-date">
+                                October 2013—April 2014
+                              </i>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div style="font-size: 14px;" class="font-secondary content-paragraph description">
+                        <p>
+                          Trusted with scrubbing test data, making sure it followed proper testing
+                          procedure and met standards of believability, readability, and
+                          professionalism; fixing what mistakes could be fixed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content-group">
+                      <table class="cr-ordering-table crd-row">
+                        <tbody>
+                        
+                        <tr class="employer-row">
+                          <td class="crd-col">
+                            <b style="font-size: 19px;" class="font-primary inline-block item-name">Volt</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block employer-location">
+                              <span style="font-size: 16px;" class="font-primary">Redmond, Washington</span>
+                            </div>
+                          </td>
+                        </tr>
+                        
+                        <tr style="font-size: 16px;">
+                          <td class="crd-col">
+                            <b class="employer-title font-secondary inline-block">Functional Game Tester</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block item-date">
+                              <i class="date font-secondary cr-date" >
+                                November 2011—August 2013
+                              </i>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div style="font-size: 14px;" class="font-secondary content-paragraph description">
+                        <p>Graduated from hardware testing to testing software submitted for approval and release on the Xbox 360.</p>
+                      </div>
+                    </div>
+                    <div class="content-group">
+                      <table class="cr-ordering-table crd-row">
+                        <tbody>
+                        <tr style="font-size: 16px;">
+                          <td class="crd-col">
+                            <b class="employer-title font-secondary inline-block">Hardware Game Tester</b>
+                          </td>
+                          <td class="crd-col align-right">
+                            <div class="inline-block item-date">
+                              <i class="date font-secondary cr-date" >
+                                March 2011—November 2011
+                              </i>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div style="font-size: 14px;" class="font-secondary content-paragraph description">
+                        <p>Performed routine test cases on the Xbox 360 hardware and software.</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </section>
       </div>
       <div style="height: 979px;" class="section-4 fill col-md-4">
         <div>
@@ -523,7 +328,7 @@ layout: null
             <div>
               <div class="col-md-12">
                 <div>
-                  <div class="ng-isolate-scope">
+                  <div class="">
                     <div class="row section-header header-underline">
                       <div class="font-primary col-md-12 fg-primary uppercase medium">
                         <span class="bold" style="letter-spacing: 0px;">
@@ -548,7 +353,7 @@ layout: null
                           </div>
                         </div>
                         <div>
-                          <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-isolate-scope ng-valid"><p >A vaguely physics-themed puzzle game created entirely in front-end JavaScript and
+                          <div style="font-size: 14px;" class="font-secondary content-paragraph description"><p >A vaguely physics-themed puzzle game created entirely in front-end JavaScript and
                             HTML.</p></div>
                         </div>
                       </div>
@@ -564,7 +369,7 @@ layout: null
                           </div>
                         </div>
                         <div>
-                          <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-isolate-scope ng-valid"><p >Team
+                          <div style="font-size: 14px;" class="font-secondary content-paragraph description"><p >Team
                             Project – Live debate app in Express.js using Socket.IO, allowing a
                             user to spectate on debates or choose a side and join the queue to be
                             allowed to speak.<br></p></div>
@@ -582,7 +387,7 @@ layout: null
                           </div>
                         </div>
                         <div>
-                          <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-isolate-scope ng-valid"><p >A fan fiction site made in Flask with Tumblr account integration.<br ></p></div>
+                          <div style="font-size: 14px;" class="font-secondary content-paragraph description"><p >A fan fiction site made in Flask with Tumblr account integration.<br ></p></div>
                         </div>
                       </div>
                     </div>
@@ -596,7 +401,7 @@ layout: null
                           </div>
                         </div>
                         <div>
-                          <div style="font-size: 14px;" class="font-secondary content-paragraph description ng-isolate-scope ng-valid">
+                          <div style="font-size: 14px;" class="font-secondary content-paragraph description">
                             <p>Ruby on Rails app meant to resolve the conflicts in a group of people's pizza
                             topping preferences.</p>
                           </div>
@@ -612,7 +417,7 @@ layout: null
             <div>
               <div class="col-md-12">
                 <div>
-                  <div class="ng-isolate-scope">
+                  <div class="">
                     <div class="row section-header header-underline">
                       <div class="font-primary col-md-12 fg-primary uppercase medium">
                         <span class="bold" style="letter-spacing: 0px;">
