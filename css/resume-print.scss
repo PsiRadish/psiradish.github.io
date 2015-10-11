@@ -52,6 +52,23 @@
         content : "";
     }
     
+    .top-header
+    {
+        background: none;
+    }
+    .nameplate .first-name, .nameplate .occupation
+    {
+        color: $color-primary;
+    }
+    .nameplate .last-name, .contact-icon-link
+    {
+        color: $color-secondary;
+    }
+    
+    section#projects a
+    {
+        color: black;
+    }
     a.project-git
     {
         display: none;

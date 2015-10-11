@@ -101,7 +101,7 @@ p.description
 }
 .contact-icon-link
 {
-    color: #FF9933;
+    color: $color-secondary;
     font-size: 14px;
     margin-right: 8px;
     
@@ -332,11 +332,6 @@ body
 {
     background-color : #DDD;
     font-size: $font-size-base;
-}
-
-body, span, div, table, tr, tbody, tfoot, td, hr, main, article, header
-{
-    -webkit-print-color-adjust : exact;
 }
 
 a
