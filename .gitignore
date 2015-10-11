@@ -3,3 +3,5 @@ __site/
 .sass-cache/
 .idea/
 Thumbs.db
+resume_cleanup.py
+resume_dirty.html
