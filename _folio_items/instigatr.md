@@ -1,6 +1,6 @@
 ---
 title: Instigatr
-brief: <b>Team Project</b> – Live debate app allowing the user to spectate on debates, or choose a side and join the queue to be allowed to speak.
+brief: <b>Team Project</b> – Live debate app in Express.js using Socket.IO, allowing a user to spectate on debates, or choose a side and join the queue to be allowed to speak.
 permalink: /instigatr/
 screenshot: instigatr.jpg
 demo_url: "https://instigatr.herokuapp.com/"

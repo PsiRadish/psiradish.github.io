@@ -1,0 +1,127 @@
+first_name: Kyle
+last_name: Fiegener
+occupation: Web Developer
+contacts:
+  left:
+    - text: KyleFiegener@gmail.com
+      href: "mailto:KyleFiegener@gmail.com"
+      icon: envelope
+    - text: psiradish.github.io
+      href: "http://psiradish.github.io/"
+      icon: globe
+  middle:
+    - text: PsiRadish
+      href: "http://www.github.com/PsiRadish"
+      icon: github
+    - text: linkedin.com/in/KyleFiegener
+      href: "https://www.linkedin.com/in/KyleFiegener"
+      icon: linkedin-square
+  right:
+    - text: Kent, WA
+      icon: map-marker
+    # - text: (253) 555-5555
+    #   icon: phone
+summary: Web developer who enjoys the merging of art and science that comes with full-stack development.
+skill_groups:
+  - name: Web Development
+    subgroups:
+      - name: Languages
+        skills:
+          - name: JavaScript
+          - name: Ruby
+          - name: Python
+          - name: HTML5
+          - name: CSS3
+          - name: Sass
+      - name: Frameworks
+        skills:
+          - name: Express.js
+          - name: Ruby on Rails
+          - name: AngularJS
+          - name: Flask
+          - name: Jekyll
+          - name: Sails
+      - name: Databases/ORMs
+        skills:
+          - name: PostgreSQL
+          - name: MongoDB
+          - name: ActiveRecord
+          - name: Sequelize
+          - name: SQLAlchemy
+          - name: Waterline
+      - name: Miscellaneous
+        skills:
+          - name: Git/GitHub
+          - name: Heroku
+          - name: jQuery
+          - name: AJAX
+          - name: Socket.IO
+          - name: Bootstrap
+          - name: InK
+          - name: Semantic UI
+  - name: Other
+    subgroups:
+      - name: Languages
+        skills:
+          - name: "C#"
+          - name: Java
+          - name: C++
+      - name: Graphics
+        skills:
+          - name: Photoshop
+          - name: GIMP
+      - name: Playtime
+        skills:
+          - name: Reading
+          - name: Gaming
+          - name: Game Modding
+max_jobs_to_show: 5
+employers:
+  - name: General Assembly
+    location: "Seattle, Washington"
+    jobs:
+      - title: Web Development Immersive Student
+        start: June 2015
+        end: September 2015
+        description: >
+          50+ hours per week immersive coding bootcamp learning front- and back-end web development.
+          Individual and team projects building web applications in Ruby on Rails, Node.js, AngularJS, and Flask.
+  - name: Flexasoft
+    location: "Redmond, Washington"
+    jobs:
+      - title: Consumer Acceptance Tester
+        start: August 2013
+        end: June 2015
+        description: >
+          Performed various test cases on the client's hardware and software; mostly software on Xbox One,
+          but also the MSN.com website on different browsers and mobile devices.
+      - title: Data Analyst
+        start: October 2013
+        end: April 2014
+        description: >
+          Trusted with scrubbing test data, making sure it followed proper testing procedure and met
+          standards of believability, readability, and professionalism; fixing what mistakes could be fixed.
+  - name: Volt
+    location: "Redmond, Washington"
+    jobs:
+      - title: Functional Game Tester
+        start: November 2011
+        end: August 2013
+        description: Graduated from hardware testing to testing software submitted for approval and release on the Xbox 360.
+      - title: Hardware Game Tester
+        start: March 2011
+        end: November 2011
+        description: Performed routine test cases on the Xbox 360 hardware and software.
+  - name: Parker Staffing
+    location: "Redmond, Washington"
+    jobs:
+      - title: Nintendo Advanced Wi-fi
+        start: December 2010
+        description: Call center helping Wii and Nintendo DS owners get their systems online.
+education:
+  - institution: General Assembly
+    detail: Web Development Immersive 2015
+  - institution: "University of Washington, Tacoma"
+    detail: Computer Science
+  - institution: Green River Community College
+    detail: A.S. Computer Science 2004

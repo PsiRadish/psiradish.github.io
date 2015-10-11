@@ -129,7 +129,7 @@ ul.contact-list
 }
 
 /* Left-aligned center */
-.contact-list-col > .swivel
+.contact-list-col + .contact-list-col:not(:last-child) > .swivel
 {
     display  : inline-block;
     position : relative;
@@ -143,10 +143,19 @@ ul.contact-list
     }
 }
 
-/* Right-aligned */
-.contact-list-col:last-child
+/* Left-justified right-aligned */
+.contact-list-col:last-child > .swivel
 {
-    text-align : right;
+    // display  : inline-block;
+    position : relative;
+    // text-align : right;
+    
+    > ul.contact-list
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .page-body
@@ -282,6 +291,10 @@ section#projects h3
 {
     line-height : 1.1;
     font-size: 18px;
+}
+a.project-git
+{
+    float: right;
 }
 
 section#education h3

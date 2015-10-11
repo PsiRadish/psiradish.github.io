@@ -3,7 +3,7 @@ title: Kyle Fiegener's Portfolio
 email: KyleFiegener@gmail.com
 author: Kyle Fiegener
 description: >  # ('>' means to ignore newlines until "baseurl:")
-  Kyle Fiegener is a front-leaning full-stack developer who enjoys the merging of art and science that comes with full-stack web development.
+  Kyle Fiegener is a web developer who enjoys the merging of art and science that comes with full-stack web development.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://psiradish.github.io" # the base hostname & protocol for your site
 # twitter_username: himitsu!
