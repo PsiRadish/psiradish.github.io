@@ -12,7 +12,7 @@
     position: relative;
     
     // opacity: $nav-opacity;
-    a:not[disabled]
+    a:not([disabled])
     {
         &:hover, &:focus, &:active
         {

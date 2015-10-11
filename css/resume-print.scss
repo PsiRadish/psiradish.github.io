@@ -1,0 +1,54 @@
+---
+#// Oi, Jekyll!
+---
+
+@import "resume_vars";
+
+@media print
+{
+    html, body
+    {
+        background-color : #FFF !important;
+        overflow         : hidden;
+        margin           : 0 !important;
+        padding          : 0 !important;
+        width            : $page-width !important;
+        
+        &.a4
+        {
+            //height : 1168px !important;
+            width  : $page-width-a4 !important;
+        }
+    }
+    
+    body > *
+    {
+        margin : 0 !important;
+    }
+    
+    @page
+    {
+        size    : auto;
+        margin  : 0mm 0mm 0mm 0mm;
+        padding : 0mm 0mm 0mm 0mm;
+    }
+    
+    .document-container
+    {
+        margin   : 0 !important;
+        overflow : hidden;
+    }
+    
+    .page
+    {
+        box-shadow  : none;
+        display     : block;
+        margin-left : -35px;
+        position    : static;
+    }
+    
+    a[href]::after
+    {
+        content : "";
+    }
+}

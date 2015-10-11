@@ -2,21 +2,7 @@
 #// Oi, Jekyll!
 ---
 
-$font-primary: Consolas, Monaco, Monofur, monospace;
-$font-secondary: Corbel, Gill Sans, Lato, Gill Sans MT, Lucida Grande, Lucida Sans, Trebuchet MS, sans-serif;
-
-$font-size-base: 14px;
-
-$page-width     : 850px;
-$page-height    : 1100px;
-$page-width-a4  : 827px;
-$page-height-a4 : 1168px;
-$page-gap       : 50px;
-
-.bold
-{
-    font-weight : bold;
-}
+@import "resume_vars";
 
 .center-auto
 {
@@ -36,14 +22,20 @@ $page-gap       : 50px;
     float   : right;
 }
 
-.italic
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 {
-    font-style : italic;
+    font-family: $font-primary;
+    line-height: 1.42857;
 }
 
-h1, h2, h3, h4, h5
+p
 {
-    font-family : $font-primary;
+    font-family: $font-secondary;
+    font-size: $font-size-base;
+}
+p.description
+{
+    margin: 2px auto 10px;
 }
 
 .clearfix:after
@@ -56,105 +48,246 @@ h1, h2, h3, h4, h5
     font-size  : 0;
 }
 
-.span-left span.nameplate-name-value,
-.span-left span.nameplate-occupation-value
+.top-header
 {
-    float : left;
-}
-
-.contact-icon
-{
-    text-align : center;
-    width      : 13px;
-}
-
-.contact-icon-link
-{
-    color        : #000;
-    font-size    : 14px;
-    margin-right : 8px;
-}
-
-.contact-icon-link.hover-enabled:hover
-{
-    color           : #666;
-    text-decoration : none;
-}
-
-.contact-icon-link .icon-link-text
-{
-    line-height : 1.15 !important;
-}
-
-.content-group table
-{
-    width : 100%;
-}
-
-.description
-{
-    margin : 2px auto 0;
+    //border  : 10px solid transparent;
+    margin  : 0 -35px 15px;
+    padding : 10px 35px;
+    background-color: $color-primary;
 }
 
 .nameplate
 {
+    font-family: $font-primary;
+    letter-spacing: 0px;
+    margin: 5px 0;
+    
     position : relative;
+    
+    .first-name, .last-name, .occupation
+    {
+        display     : inline-block;
+        line-height : 0.8;
+    }
+    
+    .first-name, .last-name
+    {
+        font-size: 42px;
+        font-weight: bold;
+        
+        float: left;
+    }
+    .first-name { color: white; }
+    .last-name  { color: $color-secondary; }
+    
+    .occupation
+    {
+        font-size: 24px;
+        color: white;
+    
+        position : absolute;
+        bottom   : 0;
+        right    : 0;
+        
+        float      : right;
+        text-align : right;
+    }
 }
 
-.nameplate-horizontal-row
+.contact-list-row
 {
-    margin : 5px 0;
+    font-family: $font-secondary;
+    font-size: 14px;
 }
-
-.nameplate-horizontal-row .nameplate-name,
-.nameplate-horizontal-row .nameplate-occupation
+.contact-icon-link
 {
-    display     : inline-block;
-    line-height : 0.8;
+    color: #FF9933;
+    font-size: 14px;
+    margin-right: 8px;
+    
+    .icon-link-text
+    {
+        line-height : 1.15 !important;
+    }
 }
-
-.nameplate-horizontal-row .nameplate-occupation
+a.contact-icon-link:hover
 {
-    bottom   : 0;
-    position : absolute;
-    right    : 0;
+    color: #F0EBE6;
+    text-decoration: none;
+}
+.contact-icon
+{
+    text-align : center;
+    width      : $font-size-base;
 }
 
-.nameplate-name,
-.nameplate-occupation
+ul.contact-list
+{
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+}
+
+/* Left-aligned center */
+.contact-list-col > .swivel
+{
+    display  : inline-block;
+    position : relative;
+    left     : 50%;
+    
+    > ul.contact-list
+    {
+        display  : inline-block;
+        position : relative;
+        left     : -50%;
+    }
+}
+
+/* Right-aligned */
+.contact-list-col:last-child
+{
+    text-align : right;
+}
+
+.page-body
+{
+    font-size: $font-size-base;
+    font-family: $font-secondary;
+}
+
+#left-column
+{
+    padding-right : 20px;
+}
+
+#right-column
+{
+    padding-left : 15px;
+}
+
+section
+{
+    margin-bottom: 10px;
+    
+    > header
+    {
+        margin-bottom : 9px;
+        
+        h2
+        {
+            font-size: 21px;
+            color: $color-primary;
+            text-transform : uppercase;
+            font-weight: bold;
+            letter-spacing: 0px;
+            
+            margin: 0;
+        }
+        
+        hr
+        {
+            border-top: $section-underline-width solid $color-primary;
+            height: $section-underline-width;
+            margin: 0 0 5px;
+        }
+    }
+}
+
+section h3, section h4
+{
+    margin: 0;
+}
+
+section#skills h3
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+ul.skills-list
+{
+    padding-left: $font-size-base;
+    list-style: none;
+    
+    /* float to align everything along the top edge */
+    float: left;
+    
+    > li
+    {
+        float: left;
+        width : 100%;
+        
+        > label
+        {
+            float : left;
+            width : calc(20% + 1em);
+            font-weight: bold;
+            
+            margin: 0;
+        }
+        > label + span.skills
+        {
+            float : left;
+            width : calc(80% - 1em);
+        }
+        
+        // Have to CSS the bullets manually or they'll appear on the right in Chrome
+        &::before
+        {
+            float: left;
+            content: "•";
+            width: 0;
+            margin-left: -$font-size-base;
+        }
+    }
+}
+
+section#employment h3
+{
+    font-size: 19px;
+    position: relative;
+    
+    span.employer-name
+    {
+        font-weight: bold;
+    }
+    span.employer-location
+    {
+        font-size: 16px;
+        float: right;
+        
+        // force vertical alignment
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+    }
+}
+section#employment h4
+{
+    font-size: 16px;
+    font-family: $font-secondary;
+    
+    span.job-title
+    {
+        font-weight: bold;
+    }
+    span.job-duration
+    {
+        font-style: italic;
+        float: right;
+    }
+}
+
+section#projects h3
 {
     line-height : 1.1;
+    font-size: 18px;
 }
 
-.skills-container:first-of-type
+section#education h3
 {
-    margin-top : 3px;
-}
-
-.section-header
-{
-    font-size     : 21px;
-    margin-bottom : 5px;
-}
-
-.section-header .medium
-{
-    font-size : 21px;
-}
-
-.section-header-underline
-{
-    margin-bottom : 5px;
-}
-
-.section-header-underline.underline-full
-{
-    width : 100%;
-}
-
-.section-header-underline.underline-thin
-{
-    height : 1px;
+    line-height : 1.1;
+    font-size: 16px;
 }
 
 .align-center
@@ -177,40 +310,15 @@ h1, h2, h3, h4, h5
     text-align : right;
 }
 
-.bold
-{
-    font-weight : bold;
-}
-
 .content-group
 {
     margin-bottom : 10px;
 }
 
-.content-title
-{
-    line-height : 1.1;
-}
-
-.float-right-justify
-{
-    float      : right;
-    text-align : right;
-}
-
-.inline-block
-{
-    display : inline-block;
-}
-
-.uppercase
-{
-    text-transform : uppercase;
-}
-
 body
 {
     background-color : #DDD;
+    font-size: $font-size-base;
 }
 
 body, span, div, table, tr, tbody, tfoot, td, hr, main, article, header
@@ -264,28 +372,41 @@ ul
         top : 4 * ($page-height + $page-gap);
     }
 }
-
-.a4 .page
+.page-content
 {
-    width     : $page-width-a4 !important;
-    max-width : $page-width-a4 !important;
-    height    : $page-height-a4 !important;
-    
-    .page-2
+    margin-left: 35px;
+    margin-right: 35px;
+    height: $page-height - 15px;
+}
+
+.a4
+{
+    .page
     {
-        top : $page-height-a4 + $page-gap;
+        width     : $page-width-a4 !important;
+        max-width : $page-width-a4 !important;
+        height    : $page-height-a4 !important;
+        
+        .page-2
+        {
+            top : $page-height-a4 + $page-gap;
+        }
+        .page-3
+        {
+            top : 2 * ($page-height-a4 + $page-gap);
+        }
+        .page-4
+        {
+            top : 3 * ($page-height-a4 + $page-gap);
+        }
+        .page-5
+        {
+            top : 4 * ($page-height-a4 + $page-gap);
+        }
     }
-    .page-3
+    .page-content
     {
-        top : 2 * ($page-height-a4 + $page-gap);
-    }
-    .page-4
-    {
-        top : 3 * ($page-height-a4 + $page-gap);
-    }
-    .page-5
-    {
-        top : 4 * ($page-height-a4 + $page-gap);
+        height: $page-height-a4 - 15px;
     }
 }
 
@@ -305,127 +426,3 @@ ul
         max-width : $page-width-a4 !important;
     }
 }
-
-#left-column
-{
-    padding-right : 20px;
-}
-
-#right-column
-{
-    padding-left : 15px;
-}
-
-.top-header
-{
-    border  : 10px solid transparent;
-    margin  : 0 -35px 15px;
-    padding : 0 10px;
-}
-
-.font-primary
-{
-    font-family : Consolas, Monaco, Monofur, monospace !important;
-}
-.font-secondary
-{
-    font-family : Corbel, Gill Sans, Lato, Gill Sans MT, Lucida Grande, Lucida Sans, Trebuchet MS, sans-serif !important;
-}
-.bg-primary
-{
-    background-color : #03305A;
-}
-
-.fg-primary
-{
-    color : #03305A;
-}
-
-.fg-secondary
-{
-    color : #FF9933;
-}
-
-.fg-secondary .contact-icon-link
-{
-    color : #FF9933;
-}
-
-.hv-secondary-light .contact-icon-link.hover-enabled:hover
-{
-    color : #F0EBE6;
-}
-
-.fg-white
-{
-    color : #FFF;
-}
-
-ul.contact-list
-{
-    margin     : 0;
-    padding    : 0;
-    list-style : none;
-}
-
-/* Left-aligned center */
-.contact-list-container > .swivel
-{
-    display  : inline-block;
-    position : relative;
-    left     : 50%;
-    
-    > ul.contact-list
-    {
-        display  : inline-block;
-        position : relative;
-        left     : -50%;
-    }
-}
-
-/* Right-aligned */
-.contact-list-container:last-child
-{
-    text-align : right;
-}
-
-ul.skills-list
-{
-    padding-left: $font-size-base;
-    list-style: none;
-    
-    /* float to align everything along the top edge */
-    float: left;
-    
-    > li
-    {
-        float: left;
-        width : 100%;
-        
-        // Have to CSS the bullets manually or they'll appear on the right in Chrome
-        &::before
-        {
-            float: left;
-            content: "•";
-            width: 0;
-            margin-left: -$font-size-base;
-        }
-    }
-}
-
-ul.skills-list > li > b
-{
-    float : left;
-    width : calc(20% + 1em);
-}
-
-ul.skills-list > li > span
-{
-    float : left;
-    width : calc(80% - 1em);
-}
-
-/*.employer-row
-{
-  font-weight: bold;
-}*/
