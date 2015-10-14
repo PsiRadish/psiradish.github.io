@@ -51,11 +51,12 @@ skill_groups:
           - name: Waterline
       - name: Miscellaneous
         skills:
-          - name: Git/GitHub
-          - name: Heroku
-          - name: jQuery
           - name: AJAX
           - name: Socket.IO
+          - name: jQuery
+          - name: CSS Animation
+          - name: Git/GitHub
+          - name: Heroku
           - name: Bootstrap
           - name: InK
           - name: Semantic UI
