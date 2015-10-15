@@ -1,7 +1,7 @@
 ---
 title: Bequarked
 brief: A vaguely physics-themed puzzle game created entirely in frontend Javascript and HTML.
-permalink: /bequarked/
+permalink: /folio/bequarked/
 screenshot: bequarked.jpg
 demo_url: "http://psiradish.github.io/Bequarked/"
 repo_url: "http://github.com/PsiRadish/Bequarked"

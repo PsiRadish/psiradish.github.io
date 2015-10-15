@@ -1,7 +1,7 @@
 ---
 title: Inspired
 brief: A fan fiction site made in Flask with Tumblr account integration.
-permalink: /inspired/
+permalink: /folio/inspired/
 screenshot: inspired.jpg
 demo_url: "https://infinspired.herokuapp.com/"
 repo_url: "https://github.com/PsiRadish/Inspired"
