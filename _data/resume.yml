@@ -40,7 +40,7 @@ skill_groups:
           - name: AngularJS
           - name: Flask
           - name: Jekyll
-          - name: Sails
+          - name: Sails.js
       - name: Databases/ORMs
         skills:
           - name: PostgreSQL
