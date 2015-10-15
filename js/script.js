@@ -1,5 +1,5 @@
 
-$(function()
+$(document).ready(function()
 {
     function size()
     {
@@ -17,7 +17,6 @@ $(function()
     size();
     
     // Set screenshots max size to source image dimensions
-    console.log("Set screenshots max size to source image dimensions");
     $("img.screenshot").each(function()
     {   
         var screenshot = this;

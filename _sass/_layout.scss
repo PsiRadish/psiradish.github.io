@@ -172,20 +172,6 @@ hr
     
 } */
 
-// fancy left-justified centering
-.shuck
-{
-    display: inline-block;
-    position: relative;
-    left: 50%;
-}
-.shuck > .jive
-{
-    display: inline-block;
-    position: relative;
-    left: -50%;
-}
-
 @include media-query($on-palm) 
 {
     .footer-col 
@@ -293,67 +279,11 @@ hr
         {
             font-size: $font-size-h6 - 2;
         }
+        
+        .folio-brief-col .brief
+        {
+            margin-top: $font-size-h4 - 2;
+        }
     }
 }
 
-
-// === RADISH ===
-
-span.egg:hover
-{
-    text-decoration-style: dotted;
-}
-
-.resume-icon
-{
-    font-size: 0.75em;
-}
-
-img.screenshot
-{
-    width: 66.7%;
-    // display: block;
-    // margin: 0.5em auto;
-    
-    // @include spell-box($container-color);
-    // @include glow-mild-border($container-color);
-}
-
-.item-link-col
-{
-    text-align: center;
-    
-    display: inline-block;
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-}
-
-
-.resume
-{
-    background: linear-gradient(45deg, #F8F8F8 0%, #F8F8F8 90%, transparent 90%, transparent 100%);
-    // width: 85px;
-    // height: 110px;
-    position: relative;
-    
-    /* typography */
-    // padding: 10px 0 10px 10px;
-    color: #080808;
-    
-    overflow: hidden;
-    
-    &::after
-    {
-        content: '';
-        display: inline-block;
-        width: 23px;
-        height: 23px;
-        right: 0;
-        top: 0;
-        position: absolute;
-        background: linear-gradient(45deg, #E8E8E8 0%, #E0E0E0 50%, transparent 50%, transparent 100%);
-        box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
-        border-left: 1px solid rgba(0,0,0,0.2);
-        border-bottom: 1px solid rgba(0,0,0,0.2);
-    }
-}
