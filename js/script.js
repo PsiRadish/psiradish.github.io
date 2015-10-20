@@ -1,7 +1,7 @@
 
 $(document).ready(function()
 {
-    function size()
+    /*function size()
     {
         $('.portal').each(function() // weird things happen with portals when height not explicitly defined
         {
@@ -14,7 +14,7 @@ $(document).ready(function()
     // call it all the time
     $(window).on('resize', size);
     // and right now
-    size();
+    size();*/
     
     // Set screenshots max size to source image dimensions
     $("img.screenshot").each(function()
@@ -30,11 +30,11 @@ $(document).ready(function()
         });
     });
     
-    // Immediately remove focus from clicked links and buttons
+    /* Immediately remove focus from clicked links and buttons
     $('a, button, input[type="button"], input[type="reset"], input[type="submit"], .button').on("click", function()
     {
         $(this).blur();
-    });
+    });*/
     
     // Emoji One
     $(".post-content > p, .post-content > ul > li").each(function()

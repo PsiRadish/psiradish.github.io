@@ -152,11 +152,6 @@ hr
     
     width: -webkit-calc(33.3% - (#{$spacing-unit} / 2));
     width:         calc(33.3% - (#{$spacing-unit} / 2));
-    
-    ul
-    {
-        @include list-style-none();
-    }
 }
 /* 
 .footer-col-1

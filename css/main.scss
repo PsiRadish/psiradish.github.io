@@ -80,7 +80,7 @@ $resume-width:     850px;
 @import "arcane/fix";
 
 @import "arcane/components";
-@import "arcane/flavors";
+@import "arcane/schools";
 
 
 // APP-SPECIFIC
@@ -92,7 +92,8 @@ span.egg:hover
 
 .resume-icon
 {
-    font-size: 0.75em;
+    font-size: 0.5em;
+    bottom: 3px;
 }
 
 img.screenshot

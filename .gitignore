@@ -5,3 +5,5 @@ __site/
 Thumbs.db
 resume_cleanup.py
 resume_dirty.html
+Portfolio.sublime-project
+Portfolio.sublime-workspace
