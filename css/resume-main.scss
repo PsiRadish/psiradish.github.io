@@ -4,6 +4,49 @@
 
 @import "resume_vars";
 
+.align-center
+{
+    text-align : center;
+}
+
+.align-justify
+{
+    text-align : justify;
+}
+
+.align-left
+{
+    text-align : left;
+}
+
+.align-right
+{
+    text-align : right;
+}
+
+.content-group
+{
+    margin-bottom : 10px;
+}
+
+body
+{
+    background-color : #DDD;
+    font-size: $font-size-base;
+}
+
+a
+{
+    font-family: $font-secondary;
+    font-size: 14px;
+}
+
+ul
+{
+    margin-bottom : 0;
+    padding-left  : 15px;
+}
+
 .center-auto
 {
     margin-left  : auto;
@@ -26,6 +69,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 {
     font-family: $font-primary;
     line-height: 1.42857;
+    
+    a
+    {
+        font-family: inherit;
+        font-size: inherit;
+    }
 }
 
 p
@@ -104,11 +153,6 @@ p.description
     color: $color-secondary;
     font-size: 14px;
     margin-right: 8px;
-    
-    .icon-link-text
-    {
-        line-height : 1.15 !important;
-    }
 }
 a.contact-icon-link:hover
 {
@@ -119,6 +163,10 @@ a.contact-icon-link:hover
 {
     text-align : center;
     width      : $font-size-base;
+}
+.icon-link-text
+{
+    line-height : 1.15 !important;
 }
 
 ul.contact-list
@@ -158,10 +206,41 @@ ul.contact-list
     }
 }
 
+.pdf-link
+{
+    position: fixed;
+    left: ($page-width + 20px);
+    top: 54px;
+    
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Source Sans Pro", "Open Sans", Verdana, Arial, sans-serif;
+    background-color: white;
+    padding: 0 3px 1px;
+    
+    &:hover
+    {
+        text-decoration: none;
+        
+        > span
+        {
+            text-decoration: underline;
+        }
+    }
+}
+
 .page-body
 {
     font-size: $font-size-base;
     font-family: $font-secondary;
+    
+    a
+    {
+        color : #2E8686;
+    }
+    a:hover
+    {
+        color : #589E9E;
+    }
 }
 
 #left-column
@@ -303,53 +382,6 @@ section#education h3
     font-size: 16px;
 }
 
-.align-center
-{
-    text-align : center;
-}
-
-.align-justify
-{
-    text-align : justify;
-}
-
-.align-left
-{
-    text-align : left;
-}
-
-.align-right
-{
-    text-align : right;
-}
-
-.content-group
-{
-    margin-bottom : 10px;
-}
-
-body
-{
-    background-color : #DDD;
-    font-size: $font-size-base;
-}
-
-a
-{
-    color : #2E8686;
-}
-
-a:hover
-{
-    color : #589E9E;
-}
-
-ul
-{
-    margin-bottom : 0;
-    padding-left  : 15px;
-}
-
 .page
 {
     -webkit-box-shadow : 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -363,19 +395,19 @@ ul
     top                : 0;
     overflow           : hidden;
     
-    .page-2
+    &.page-2
     {
         top : $page-height + $page-gap;
     }
-    .page-3
+    &.page-3
     {
         top : 2 * ($page-height + $page-gap);
     }
-    .page-4
+    &.page-4
     {
         top : 3 * ($page-height + $page-gap);
     }
-    .page-5
+    &.page-5
     {
         top : 4 * ($page-height + $page-gap);
     }
