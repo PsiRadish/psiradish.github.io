@@ -5,6 +5,7 @@ author: Kyle Fiegener
 description: Kyle Fiegener is a web developer who enjoys the merging of art and science that comes with full-stack development.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://psiradish.github.io" # the base hostname & protocol for your site
+port: 9001
 # twitter_username: himitsu!
 github_username:  PsiRadish
 linkedin: https://www.linkedin.com/in/KyleFiegener
