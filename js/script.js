@@ -20,7 +20,7 @@ $(document).ready(function()
     $("img.screenshot").each(function()
     {   
         var screenshot = this;
-        console.log(this);
+        // console.log(this);
         
         // Make in memory copy of image to avoid css issues
         $("<img/>").attr("src", screenshot.getAttribute("src")).load(function()

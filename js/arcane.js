@@ -7,7 +7,7 @@ function arcaneResize()
         var $this = $(this);
         
         $this.removeAttr('style');
-        console.log("Portal height", $this.outerHeight(false));
+        // console.log("Portal height", $this.outerHeight(false));
         $this.height($this.outerHeight(false));
     });
 }
