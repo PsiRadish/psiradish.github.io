@@ -64,6 +64,11 @@ ol
             top: 0;
             left: 0;
         }
+        
+        > a
+        {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -212,11 +217,6 @@ code
     // font-family : $font-body;
     // font-size   : $font-size-base;
     line-height: 1.1;
-    
-    a
-    {
-        text-decoration: underline;
-    }
 }
 
 .page
@@ -309,7 +309,7 @@ code
         position    : static;
     }
     
-    a:link
+    a
     {
         color: $text-color;
     }
