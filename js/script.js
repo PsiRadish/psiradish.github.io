@@ -44,4 +44,13 @@ $(document).ready(function()
         var converted = emojione.toImage(original);
         $(this).html(converted);
     });
+    
+    // Gift List: create hidden print URLs
+    $(".gift-list ol > li").each(function()
+    {
+        var url = $(this).children('a').attr('href');
+        var newListItem = $('<li><code>' + url + '</code></li>');
+        
+        $(this).children('ul').append(newListItem);
+    });
 });

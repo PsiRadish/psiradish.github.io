@@ -1,0 +1,330 @@
+---
+#// Oi, Jekyll!
+---
+
+@import "gift-list_vars";
+
+.align-center
+{
+    text-align : center;
+}
+
+.align-justify
+{
+    text-align : justify;
+}
+
+.align-left
+{
+    text-align : left;
+}
+
+.align-right
+{
+    text-align : right;
+}
+
+.content-group
+{
+    margin-bottom : 10px;
+}
+
+body
+{
+    background-color : #DDD;
+    font-family      : $font-body;
+    font-size        : $font-size-base;
+}
+
+// a
+// {
+//     font-family: $font-body;
+//     font-size: 14px;
+// }
+
+ol
+{
+    // display: table;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    > li
+    {
+        margin-top: 10px;
+        padding-left: 30px;
+        
+        counter-increment: list-num;
+        position: relative;
+        
+        &::before
+        {
+            content: counter(list-num) ".";
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+ul
+{
+    font-size    : $font-size-sub;
+    list-style   : none;
+    padding-left : 10px;
+    margin       : 0;
+}
+
+/* Repurpose blockquote for adding important notes */
+blockquote
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    
+    /* Font Awesome circled exclamation mark */
+    &::before
+    {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-feature-settings: normal;
+        font-language-override: normal;
+        font-kerning: auto;
+        font-synthesis: weight style;
+        font-variant: normal;
+        font-size: inherit;
+        text-rendering: auto;
+        
+        content: "\f06a";
+    }
+    > p
+    {
+        display: inline; /* So it appears on same line as Font Awesome icon */
+    }
+}
+
+/* Repurpose <code> for printing out URLs */
+code
+{
+    padding: 0;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    
+    font-family: $font-url;
+    font-size: 0.8em;
+    
+    visibility: hidden;
+}
+
+.center-auto
+{
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.inline-left
+{
+    display : inline-block;
+    float   : left;
+}
+
+.inline-right
+{
+    display : inline-block;
+    float   : right;
+}
+
+// h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+// {
+//     // font-family: $font-heading;
+//     line-height: 1.42857;
+    
+//     a
+//     {
+//         font-family: inherit;
+//         font-size: inherit;
+//     }
+// }
+
+// p
+// {
+//     font-family: $font-body;
+//     font-size: $font-size-base;
+// }
+
+.clearfix:after
+{
+    display    : block;
+    visibility : hidden;
+    clear      : both;
+    height     : 0;
+    content    : " ";
+    font-size  : 0;
+}
+
+.top-header
+{
+    // margin  : 0 -35px 15px;
+    // padding : 10px 35px;
+    margin-bottom: ($page-margin * 2 / 3);
+    
+    text-align  : center;
+    font-size   : 44.4444px;
+    line-height : 1 !important;
+    
+    h1
+    {
+        margin: 0;
+    }
+    h1:first-child
+    {
+        font-size: inherit;
+    }
+    h1 + h1
+    {
+        font-size: 1.25em;
+    }
+    
+    p
+    {
+        font-size: $font-size-base;
+        font-family: $font-guide;
+    }
+}
+.Christmas .top-header > h1
+{
+    font-family: $font-xmas;
+}
+.Birthday .top-header > h1
+{
+    font-family: $font-bday;
+}
+
+.page-body
+{
+    // font-family : $font-body;
+    // font-size   : $font-size-base;
+    line-height: 1.1;
+    
+    a
+    {
+        text-decoration: underline;
+    }
+}
+
+.page
+{
+    -webkit-box-shadow : 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow : 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color   : #FFF;
+    width              : $page-width !important;
+    max-width          : $page-width !important;
+    height             : $page-height !important;
+    position           : absolute;
+    left               : 0;
+    top                : 0;
+    overflow           : hidden;
+    
+    &.page-2
+    {
+        top : $page-height + $page-gap;
+    }
+    &.page-3
+    {
+        top : 2 * ($page-height + $page-gap);
+    }
+    &.page-4
+    {
+        top : 3 * ($page-height + $page-gap);
+    }
+    &.page-5
+    {
+        top : 4 * ($page-height + $page-gap);
+    }
+}
+.page-content
+{
+    // margin-left: 35px;
+    // margin-right: 35px;
+    margin: $page-margin;
+    // height: $page-height - 15px;
+    height: $page-height - ($page-margin * 2);
+}
+
+.document-container
+{
+    color      : $text-color;
+    background : none;
+    width      : $page-width !important;
+    max-width  : $page-width !important;
+    // font-size  : 0;
+    // padding    : 0 35px;
+    position   : relative;
+    margin: 0 auto;
+}
+
+
+/* PRINT */
+@media print
+{
+    html, body
+    {
+        background-color : #FFF !important;
+        overflow         : hidden;
+        margin           : 0 !important;
+        padding          : 0 !important;
+        width            : $page-width !important;
+    }
+    
+    body > *
+    {
+        margin : 0 !important;
+    }
+    
+    @page
+    {
+        size    : auto;
+        margin  : 0mm 0mm 0mm 0mm;
+        padding : 0mm 0mm 0mm 0mm;
+    }
+    
+    .document-container
+    {
+        margin   : 0 !important;
+        overflow : hidden;
+    }
+    
+    .page
+    {
+        box-shadow  : none;
+        display     : block;
+        // margin-left : -35px;
+        position    : static;
+    }
+    
+    a:link
+    {
+        color: $text-color;
+    }
+    a[href]::after
+    {
+        content : "";
+    }
+    
+    code
+    {
+        visibility: visible;
+    }
+    
+    // .top-header
+    // {
+        
+    // }
+}
