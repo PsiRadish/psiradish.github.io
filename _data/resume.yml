@@ -19,8 +19,8 @@ contacts:
   right:
     - text: Kent, WA
       icon: map-marker
-    - text: (253) 555-5555
-      icon: phone
+    # - text: (253) 555-5555
+    #   icon: phone
 summary: "Web developer who's been playing with all things computer science since the age of 12, and enjoys the merging of art and science that comes with full-stack web development."
 skill_groups:
   - name: Web Development
