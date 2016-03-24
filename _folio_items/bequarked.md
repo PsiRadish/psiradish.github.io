@@ -1,10 +1,16 @@
 ---
 title: Bequarked
-brief: A vaguely physics-themed puzzle game created entirely in frontend Javascript and HTML.
+summary: A vaguely physics-themed, Bejeweled-like puzzle game created entirely in front end Javascript, CSS, and HTML.
 permalink: /folio/bequarked/
 screenshot: bequarked.jpg
 demo_url: "http://psiradish.github.io/Bequarked/"
 repo_url: "http://github.com/PsiRadish/Bequarked"
+resume_brief: Front-end-only browser game.
+resume_bullets:
+  - text: Wrote complex graphics and game logic in object oriented JavaScript.
+ #- text: Created separate JavaScript that manages view in response to events fired by game logic.
+  - text: Designed unique CSS animations.
+  - text: Created all art assets.
 ---
 
 ### How to Play

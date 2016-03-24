@@ -1,10 +1,16 @@
 ---
 title: Instigatr
-brief: <span class="team-project">Team Project</span> – Live debate app in Express.js using Socket.IO, allowing a user to spectate on debates, or choose a side and join the queue to be allowed to speak.
+summary: <span class="team-project">Team Project</span> – Live public debate app in Express.js using Socket.IO, allowing a user to spectate on debates, or choose a side and join the queue to be allowed to speak.
 permalink: /folio/instigatr/
 screenshot: instigatr.jpg
 demo_url: "https://instigatr.herokuapp.com/"
 repo_url: "https://github.com/PsiRadish/Instigatr"
+resume_brief: Team Project – Live public debate site.
+resume_bullets:
+  - text: Used modified Ink framework compiled from Sass for the front-end, and Express.js for the back-end.
+  #- text: Authored and compiled custom Sass using Compass.
+  - text: Programmed (in JavaScript) unique application logic that ran on top of basic chat room functionality from Socket.IO.
+  - text: Still implementing greater mobile responsiveness throughout project (work in progress).
 ---
 
 ###Contributors:

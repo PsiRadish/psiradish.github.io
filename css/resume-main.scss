@@ -2,7 +2,7 @@
 #// Oi, Jekyll!
 ---
 
-@import "resume_vars";
+@import "resume_import";
 
 .align-center
 {
@@ -33,6 +33,7 @@ body
 {
     background-color : #DDD;
     font-size: $font-size-base;
+    line-height: $line-height-main;
 }
 
 a
@@ -44,7 +45,7 @@ a
 ul
 {
     margin-bottom : 0;
-    padding-left  : 15px;
+    // padding-left  : 15px;
 }
 
 .center-auto
@@ -68,7 +69,7 @@ ul
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 {
     font-family: $font-primary;
-    line-height: 1.42857;
+    line-height: $line-height-main;
     
     a
     {
@@ -84,8 +85,13 @@ p
 }
 p.description
 {
-    margin: 2px auto 10px;
+    margin: 2px 0 10px;
+    // margin-bottom: 10px;
 }
+// p.description:not(:last-child)
+// {
+//     margin-bottom: 0;
+// }
 
 .clearfix:after
 {
@@ -294,11 +300,14 @@ section#skills h3
 }
 ul.skills-list
 {
-    padding-left: $font-size-base;
-    list-style: none;
+    // padding-left: $skills-list-padding;
+    // list-style: none;
     
     /* float to align everything along the top edge */
     float: left;
+    
+    // Have to pseudo the bullets or they'll appear on the right in Chrome
+    @include pseudo-bullets($skills-list-padding);
     
     > li
     {
@@ -319,14 +328,14 @@ ul.skills-list
             width : calc(80% - 1em);
         }
         
-        // Have to CSS the bullets manually or they'll appear on the right in Chrome
-        &::before
-        {
-            float: left;
-            content: "•";
-            width: 0;
-            margin-left: -$font-size-base;
-        }
+        // Have to pseudo the bullets or they'll appear on the right in Chrome
+        // &::before
+        // {
+        //     float: left;
+        //     content: "•";
+        //     width: 0;
+        //     margin-left: -$skills-list-padding;
+        // }
     }
 }
 
@@ -349,6 +358,11 @@ section#employment h3
         bottom: 1px;
         right: 0;
     }
+    
+    // p.description
+    // {
+    //     margin-top: 2px;
+    // }
 }
 section#employment h4
 {
@@ -366,10 +380,36 @@ section#employment h4
     }
 }
 
-section#projects h3
+section#projects
 {
-    line-height : 1.1;
-    font-size: 18px;
+    p.description
+    {
+        margin-bottom: 0;
+    }
+    h3
+    {
+        line-height : $line-height-head;
+        font-size: 18px;
+    }
+}
+ul.brag-list
+{
+    // padding-left: 16px;
+    @include pseudo-bullets(16px, 2px);
+    
+    li
+    {
+        // want smaller line height *inside* each <li> ...
+        line-height: $line-height-brag;
+        
+        // without changing their distance from each other
+        padding: ($font-size-base * ($line-height-main - $line-height-brag) / 2)  0; // padding to make up difference between smaller and main line-height
+        
+        // &:not(:first-child)
+        // {
+        //     margin: ($font-size-base * ($line-height-main - $line-height-brag) / 2)  0; // margin to make up some of the difference between small and large line-height
+        // }
+    }
 }
 a.project-git
 {
@@ -378,7 +418,7 @@ a.project-git
 
 section#education h3
 {
-    line-height : 1.1;
+    line-height : $line-height-head;
     font-size: 16px;
 }
 

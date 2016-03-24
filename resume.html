@@ -159,8 +159,13 @@ layout: null
             <a class="project-git" href="{{ item.repo_url }}" title="GitHub repo"><i class="fa fa-github"></i></a>
           </h3>
           <p class="description">
-            {{ item.brief }}
+            {{ item.resume_brief }}
           </p>
+          <ul class="brag-list">
+            {% for bullet in item.resume_bullets %}
+            <li>{{ bullet.text }}</li>
+            {% endfor %}
+          </ul>
         </div>
         {% endfor %}
       </section>
