@@ -1,67 +1,63 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
 
-    <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
+  <div class="footer-col-wrapper">
+    <section class="footer-col  footer-col-1">
+      <div class="shuck">
+        <ul class="contact-list jive">
+          <!-- <li>{{ site.title }}</li> -->
+          <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i> {{ site.author }}</a></li>
+          <li>Kent, WA</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="footer-col-wrapper">
-      <section class="footer-col  footer-col-1">
-        <div class="shuck">
-          <ul class="contact-list jive">
-            <!-- <li>{{ site.title }}</li> -->
-            <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i> {{ site.author }}</a></li>
-            <li>Kent, WA</li>
-          </ul>
+    <section class="footer-col  footer-col-2">
+      <div class="shuck">
+        <ul class="social-media-list jive">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github"></i>
+              <!-- <span class="username">{{ site.github_username }}</span> -->
+              <span class="username">GitHub</span>
+            </a>
+          </li>
+          {% endif %}
+          
+          {% if site.linkedin %}
+          <li>
+            <a href="{{ site.linkedin }}">
+              <i class="fa fa-linkedin-square"></i>
+              <!-- <span class="username">{{ site.author }}</span> -->
+              <span class="username">LinkedIn</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i>
+              <!-- <span class="username">{{ site.twitter_username }}</span> -->
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer-col  footer-col-3">
+      <div class="shuck">
+        <div class="jive">
+          <!-- <p class="text">{{ site.description }}</p> -->
+          <p class="text">© 2016 <span class="egg" title="Is my name on the page enough?">Kyle Fiegener</span></p>
+          <p class="text"><a href="/tech">Technology Used</a></p>
         </div>
-      </section>
-
-      <section class="footer-col  footer-col-2">
-        <div class="shuck">
-          <ul class="social-media-list jive">
-            {% if site.github_username %}
-            <li>
-              <a href="https://github.com/{{ site.github_username }}">
-                <i class="fa fa-github"></i>
-                <!-- <span class="username">{{ site.github_username }}</span> -->
-                <span class="username">GitHub</span>
-              </a>
-            </li>
-            {% endif %}
-            
-            {% if site.linkedin %}
-            <li>
-              <a href="{{ site.linkedin }}">
-                <i class="fa fa-linkedin-square"></i>
-                <!-- <span class="username">{{ site.author }}</span> -->
-                <span class="username">LinkedIn</span>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if site.twitter_username %}
-            <li>
-              <a href="https://twitter.com/{{ site.twitter_username }}">
-                <i class="fa fa-twitter"></i>
-                <!-- <span class="username">{{ site.twitter_username }}</span> -->
-                <span class="username">Twitter</span>
-              </a>
-            </li>
-            {% endif %}
-          </ul>
-        </div>
-      </section>
-
-      <section class="footer-col  footer-col-3">
-        <div class="shuck">
-          <div class="jive">
-            <!-- <p class="text">{{ site.description }}</p> -->
-            <p class="text">© 2015 <span class="egg" title="Is my name on the page enough?">Kyle Fiegener</span></p>
-            <p class="text"><a href="/tech">Technology Used</a></p>
-          </div>
-        </div>
-      </section>
-    </div>
-
+      </div>
+    </section>
   </div>
 
 </footer>

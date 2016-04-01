@@ -1,3 +1,15 @@
+
+*
+{
+    box-sizing: border-box;
+}
+
+// Because Internet Explorer's HTML5 support is a LIE
+main
+{
+    display: block;
+}
+
 /**
  * Reset some basic elements
  */
@@ -23,19 +35,42 @@ body
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    
+    padding-right:  $spacing-unit;
+    padding-left:   $spacing-unit;
+    
+    @include media-query($on-laptop)
+    {
+        padding-right:  $spacing-unit / 2;
+        padding-left:   $spacing-unit / 2;
+    }
+    @include media-query($on-palm) 
+    {
+        padding-right:  0;
+        padding-left:   0;
+    }
 }
 
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Set `margin` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm 
 {
-    margin-bottom: $spacing-unit / 2;
+    // margin-bottom: $spacing-unit / 2;
+    margin: ($spacing-unit / 2) 0;
+    
+    &:first-child, &.first
+    {
+        margin-top: 0;
+    }
+    &:last-child, &.last
+    {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -88,9 +123,66 @@ li
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
 {
-    font-weight: 300;
+    font-weight: 500;
+    line-height: $header-line-height;
+    
+    margin-top:     1em;
+    margin-bottom:  0.5em;
+    
+    @at-root *:not(a) > &:first-child
+    {
+        margin-top: 0.25em;
+    }
+    @at-root header > &
+    {
+        margin-top: 0.25em;
+        
+        &:not(:last-child)
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+.h1, .h2, .h3, h1, h2, h3
+{
+    font-family: $header-font-family;
+}
+.h4, .h5, .h6, h4, h5, h6
+{
+    font-family: $base-font-family;
+}
+.h1, h1
+{
+    font-size: $font-size-h1;
+}
+.h2, h2
+{
+    font-size: $font-size-h2;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: $nav-bg-color
+}
+.h3, h3
+{
+    font-size: $font-size-h3;
+    font-weight: bold;
+    font-style: italic;
+}
+.h4, h4
+{
+    font-size: $font-size-h4;
+}
+.h5, h5
+{
+    font-size: $font-size-h5;
+    //font-weight: 600;
+}
+.h6, h6
+{
+    font-size: $font-size-h6;
+    //font-weight: 700;
 }
 
 
@@ -103,10 +195,10 @@ a
     color: $brand-color;
     text-decoration: none;
     
-    &:visited 
-    {
-        color: darken($brand-color, 15%);
-    }
+    // &:visited 
+    // {
+    //     color: darken($brand-color, 15%);
+    // }
     
     &:hover 
     {
@@ -152,10 +244,9 @@ pre,
 code
 {
     font-size: $base-font-size - 1;
-    // border: 1px solid $grey-color-light;
-    // border-radius: 3px;
-    // background-color: #eef;
-    @include spell-box($text-color, 0.9);
+    border: 1px solid #dde;
+    border-radius: 3px;
+    background-color: #eef;
 }
 
 code 
@@ -178,44 +269,69 @@ pre
 }
 
 
+/**
+ * Small
+ */
+small
+{
+    font-size: 70%;
+}
+
 
 /**
  * Wrapper
  */
-.wrapper 
+.wrapper
 {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:    $content-width;
     margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    margin-left:  auto;
+    // padding-right: $spacing-unit;
+    // padding-left: $spacing-unit;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    
     @extend %clearfix;
     
-    &.resume
+    // &.resume
+    // {
+    //     max-width: $resume-width;
+    //     min-width: $resume-width;
+    //     padding: 0;
+    // }
+    
+    // .site-header, .site-footer, .page-content
+    > *
     {
-        max-width: $resume-width;
-        min-width: $resume-width;
-        padding: 0;
+        padding-right: $content-padding;
+        padding-left:  $content-padding;
     }
     
     @include media-query($on-laptop) 
     {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        // max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        // padding-right: $spacing-unit / 2;
+        // padding-left: $spacing-unit / 2;
         
-        &.resume
+        > *
         {
-            max-width: $resume-width;
-            min-width: $resume-width;
-            padding: 0;
+            padding-right: $content-padding / 2;
+            padding-left:  $content-padding / 2;
         }
+        
+        // &.resume
+        // {
+        //     max-width: $resume-width;
+        //     min-width: $resume-width;
+        //     padding: 0;
+        // }
     }
 }
 
-main.page-content .wrapper:not(.resume)
+// main.page-content .wrapper:not(.resume)
+.page-content
 {
     background-color: $content-bg-color;
 }

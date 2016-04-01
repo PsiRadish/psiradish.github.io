@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="favicon_wip.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="161.57143"
+     inkscape:cy="144.73077"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     width="260px"
+     showborder="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="672"
+     inkscape:window-x="1275"
+     inkscape:window-y="-5"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-796.3622)">
+    <rect
+       style="fill:#03305a;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4138"
+       width="256"
+       height="256"
+       x="0"
+       y="796.36218" />
+    <g
+       transform="matrix(2.6072783,0,0,2.6072783,157.65652,935.73495)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff9933;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4140">
+      <path
+         d="m -26.074219,24.356339 -17.270508,-27.7734379 0,27.7734379 -10.986328,0 0,-57.436524 10.986328,0 0,26.1474611 17.182618,-26.1474611 13.051757,0 -19.511718,27.3779299 20.522461,30.0585941 -13.97461,0 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90px;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#ffffff;fill-opacity:1"
+         id="path4154"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 8.6425781,-23.93956 0,15.9082033 21.7089839,0 0,8.87695313 -21.7089839,0 0,23.51074257 -10.9863281,0 0,-57.436524 33.925781,0 0,9.140625 -22.9394529,0 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90px;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#ff9933;fill-opacity:1"
+         id="path4156"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
