@@ -4,20 +4,18 @@
   {% include head.html %}
   
   <body>
-    
-    {% include header.html %}
-    
-    <!-- <hr> -->
-    
-    <main class="page-content">
-      <div class="wrapper portal school-blue">
+    <div class="wrapper">
+      {% include header.html %}
+      
+      <!-- <hr> -->
+      
+      <main class="page-content">
         {{ content }}
-      </div>
-    </main>
-    
-    <!-- <hr> -->
-    
-    {% include footer.html %}
-  
+      </main>
+      
+      <!-- <hr> -->
+      
+      {% include footer.html %}
+    </div>
   </body>
 </html>

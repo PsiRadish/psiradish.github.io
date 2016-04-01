@@ -5,18 +5,18 @@ layout: default
 <div class="post" id="folio-index">
   
   <header class="post-header">
-    <h1 class="post-title">Portfolio</h1>
+    <h2 class="post-title">Portfolio</h2>
   </header>
   
   <article class="post-content">
     <p>I am a web developer who enjoys the merging of art and science that comes with full-stack development. Here are some of the <span class="egg" title="What decides if something &ldquo;is a word&rdquo;, anyway?">awesomer</span> things I've done.</p>
     
-    <div class="clearfix">
+    <!-- <div class="clearfix"> -->
     {% for item in site.folio_items %}
       <div class="folio-card">
         <div class="folio-link-col">
           <a href="{{ item.url | prepend: site.baseurl }}">
-            <h4>{{ item.title }}</h4>
+            <h3>{{ item.title }}</h3>
             <img class="screenshot" src="{{ site.baseurl }}/img/{{ item.screenshot }}">
           </a>
         </div>
@@ -25,7 +25,7 @@ layout: default
         </div>
       </div>
     {% endfor %}
-    </div>
+    <!-- </div> -->
     
   </article>
 

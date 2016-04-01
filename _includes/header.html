@@ -1,11 +1,12 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.author }}</a>
+  <div class="position-relative">
+    <a class="site-title" href="{{ site.baseurl }}/">
+      <span class="first-name">{{site.data.resume.first_name}}</span>
+      <span class="last-name">{{site.data.resume.last_name}}</span>
+    </a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon button school-nav">
+      <a href="#" class="menu-icon button">
         <i class="fa fa-bars"></i>
       </a>
 
@@ -36,7 +37,5 @@
         -->
       </div>
     </nav>
-
   </div>
-
 </header>

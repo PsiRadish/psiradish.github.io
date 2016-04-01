@@ -4,90 +4,33 @@
 @charset "utf-8";
 
 
-// Add percentage of white to a color
-@function tint($color, $percent)
-{
-    @return mix(white, $color, $percent);
-}
-// Add percentage of black to a color
-// @function shade($color, $percent)
-// {
-//     @return mix(black, $color, $percent);
-// }
-
-
-// RADISH
-$font-size-base: 16px;
-@import "arcane/base";
-$nav-color: $link-color;
-
-// Our variables ++ RADISH: Mine now, mwahahaha and such
-$base-font-family: $font-stack-arcane-base;
-$base-font-size:   $font-size-base;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: $line-height-computed;
-
-$spacing-unit:     15px;
-
-$folio-spacing:    30px;
-
-// $text-color:       #111;
-$background-color: black;
-$content-bg-color: mix(black, #03305A, 50%);
-$brand-color:      #FF9933;
-
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    1000px;
-
-$on-laptop:        800px;
-$on-palm:          600px;
-
-$resume-width:     850px;
-
-
-// Using media queries with like this:
-// @include media-query($on-palm)
-// {
-//     .wrapper 
-//     {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) 
-{
-    @media screen and (max-width: $device) 
-    {
-        @content;
-    }
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
+@import "main-import",
         "base",
         "layout",
         "syntax-highlighting"
 ;
 
 // RADISH: Import the rest of Arcane sass
-@import "arcane/helpers";
+// @import "arcane/helpers";
 
-@import "arcane/reset";
-@import "arcane/fix";
+// @import "arcane/reset";
+// @import "arcane/fix";
 
-@import "arcane/components";
-@import "arcane/schools";
+// @import "arcane/components";
+// @import "arcane/schools";
 
 
 // APP-SPECIFIC
-
-span.egg:hover
+.center-text
 {
-    text-decoration-style: dotted;
+    text-align: center;
+}
+
+.position-relative
+{
+    position: relative;
+    @extend %clearfix;
 }
 
 .resume-icon
@@ -101,9 +44,6 @@ img.screenshot
     width: 66.7%;
     // display: block;
     // margin: 0.5em auto;
-    
-    // @include spell-box($container-color);
-    // @include glow-mild-border($container-color);
 }
 
 /* .grid-box
@@ -129,7 +69,12 @@ img.screenshot
     {
         width: 100%;
     } */
-    @include clearfix();
+    // @include clearfix();
+    @extend %clearfix;
+}
+.folio-card + .folio-card
+{
+    margin-top: $spacing-unit;
 }
 
 .folio-link-col
@@ -146,10 +91,16 @@ img.screenshot
 {
     float: left;
     width: 66.66666667%;
+    padding-left: $spacing-unit;
     
     .brief
     {
-        margin-top: $font-size-h4;
+        margin-top: $font-size-h3;
+        
+        @include media-query($on-laptop)
+        {
+            margin-top: $font-size-h3 - 2;
+        }
     }
 }
 .item-link-col
@@ -182,31 +133,53 @@ img.screenshot
     left: -50%;
 }
 
-.dog-earred
+// .dog-earred
+// {
+//     background: linear-gradient(45deg, #F8F8F8 0%, #F8F8F8 90%, transparent 90%, transparent 100%);
+//     width: 850px;
+//     height: 1100px;
+//     position: relative;
+//     
+//     /* typography */
+//     // padding: 10px 0 10px 10px;
+//     color: #080808;
+//     
+//     overflow: hidden;
+//     
+//     &::after
+//     {
+//         content: '';
+//         display: inline-block;
+//         width: 23px;
+//         height: 23px;
+//         right: 0;
+//         top: 0;
+//         position: absolute;
+//         background: linear-gradient(45deg, #E8E8E8 0%, #E0E0E0 50%, transparent 50%, transparent 100%);
+//         box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
+//         border-left: 1px solid rgba(0,0,0,0.2);
+//         border-bottom: 1px solid rgba(0,0,0,0.2);
+//     }
+// }
+
+span.egg
 {
-    background: linear-gradient(45deg, #F8F8F8 0%, #F8F8F8 90%, transparent 90%, transparent 100%);
-    width: 850px;
-    height: 1100px;
-    position: relative;
-    
-    /* typography */
-    // padding: 10px 0 10px 10px;
-    color: #080808;
-    
-    overflow: hidden;
-    
-    &::after
+    color: mix($text-color, $link-color, 50%);
+    cursor: default;
+}
+span.egg:hover
+{
+    border-bottom: 1px dotted mix($text-color, $link-color, 50%);
+    margin-bottom: -1px;
+}
+.site-header, .site-footer
+{
+    span.egg
     {
-        content: '';
-        display: inline-block;
-        width: 23px;
-        height: 23px;
-        right: 0;
-        top: 0;
-        position: absolute;
-        background: linear-gradient(45deg, #E8E8E8 0%, #E0E0E0 50%, transparent 50%, transparent 100%);
-        box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
-        border-left: 1px solid rgba(0,0,0,0.2);
-        border-bottom: 1px solid rgba(0,0,0,0.2);
+        color: mix(white, $nav-color, 88%);
+    }
+    span.egg:hover
+    {
+        border-bottom: 1px dotted mix(white, $nav-color, 88%);
     }
 }
