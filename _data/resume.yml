@@ -6,7 +6,7 @@ contacts:
     - text: KyleFiegener@gmail.com
       href: "mailto:KyleFiegener@gmail.com"
       icon: envelope
-    - text: psiradish.github.io
+    - text: http://psiradish.github.io
       href: "http://psiradish.github.io/"
       icon: globe
   middle:
@@ -17,7 +17,7 @@ contacts:
       href: "https://www.linkedin.com/in/KyleFiegener"
       icon: linkedin-square
   right:
-    - text: Kent, WA
+    - text: "Kent, WA"
       icon: map-marker
     # - text: (253) 555-5555
     #   icon: phone
@@ -118,7 +118,7 @@ employers:
     jobs:
       - title: Nintendo Advanced Wi-fi
         start: December 2010
-        description: Call center helping Wii and Nintendo DS owners get their systems online.
+        description: Provided over-the-phone technical support to consumers having trouble getting their Wii and Nintendo DS systems online.
 education:
   - institution: General Assembly
     detail: Web Development Immersive 2015
