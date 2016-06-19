@@ -1,0 +1,33 @@
+---
+permalink: /gift/
+layout: gift_list
+occasion: Birthday
+year: 2016
+---
+
+{% if site.data.gifts.prescript %}
+  {% for paragraph in site.data.gifts.prescript %}
+  <p>{{ paragraph.text }}</p>
+  {% endfor %}
+{% endif %}
+
+<ol>
+{% for gift in site.data.gifts.current %}
+  <li>
+    <a href="{{ gift.link }}">{{ gift.name }}</a>
+    <ul>
+      <li>{{ gift.description }}</li>
+      <li>{{ gift.price }}</li>
+      {% if gift.note %}
+        <li class="note"> {{ gift.note | markdownify }}</li>
+      {% endif %}
+    </ul>
+  </li>
+{% endfor %}
+</ol>
+
+{% if site.data.gifts.postscript %}
+  {% for paragraph in site.data.gifts.postscript %}
+  <p>{{ paragraph.text }}</p>
+  {% endfor %}
+{% endif %}
