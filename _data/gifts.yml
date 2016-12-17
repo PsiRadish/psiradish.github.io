@@ -2,7 +2,7 @@
 #   - text: Pre-list paragraph 1.
 #   - text: Pre-list paragraph 2.
 current:
-  - name: Fire Emblem Fates: Birthright
+  - name: "Fire Emblem Fates: Birthright"
     link: "http://fireemblemfates.nintendo.com/"
     description: 3DS game.
     price: $40
