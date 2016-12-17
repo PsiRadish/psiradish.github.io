@@ -44,7 +44,6 @@ body
 
 ol
 {
-    // display: table;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -61,13 +60,26 @@ ol
         {
             content: counter(list-num) ".";
             position: absolute;
-            top: 0;
+            // top: 0;
             left: 0;
         }
         
         > a
         {
             text-decoration: underline;
+        }
+    }
+}
+ol.sublist {
+    > li
+    {
+        counter-increment: sublist-num;
+        
+        &::before {
+            content: counter(sublist-num);
+                        
+            font-size: 80%;
+            line-height: 1.375;
         }
     }
 }
