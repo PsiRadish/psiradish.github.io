@@ -1,7 +1,7 @@
 ---
 permalink: /gift/
 layout: gift_list
-occasion: Birthday
+occasion: Christmas
 year: 2016
 ---
 
@@ -20,6 +20,13 @@ year: 2016
       <li>{{ gift.price }}</li>
       {% if gift.note %}
         <li class="note"> {{ gift.note | markdownify }}</li>
+      {% endif %}
+      {% if gift.osublist %}
+        <li><ol class="sublist">
+        {% for subitem in gift.osublist %}
+          <li>{{ subitem.text | markdownify }}</li>
+        {% endfor %}
+        </ol></li>
       {% endif %}
     </ul>
   </li>

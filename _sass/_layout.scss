@@ -301,6 +301,23 @@ hr
     font-size: 24px;
 }
 
+ol.sublist {
+    list-style-type: none;
+    
+    > li
+    {
+        counter-increment: sublist;
+        
+        &::before {
+            content: counter(sublist);
+            position: absolute;
+            
+            font-size: 80%;
+            line-height: 1.375;
+        }
+    }
+}
+
 
 
 /**

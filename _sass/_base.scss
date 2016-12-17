@@ -342,8 +342,7 @@ small
  */
 %clearfix 
 {
-    
-    &:after 
+    &::after 
     {
         content: "";
         display: table;

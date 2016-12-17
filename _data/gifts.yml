@@ -2,41 +2,32 @@
 #   - text: Pre-list paragraph 1.
 #   - text: Pre-list paragraph 2.
 current:
-  - name: Pillars of Eternity - Champion Edition
-    link: http://store.steampowered.com/sub/61327/
-    description: PC game.
-    price: $59.99
-    note: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
-  - name: This Shirt
-    link: "http://www.redbubble.com/people/likelikes/works/10603019-lucca?p=t-shirt&style=mens&body_color=royal_blue&size=large&print_location=front"
-    description: T-shirt.
-    price: $24.80
-  - name: And This Shirt
-    link: "http://www.redbubble.com/people/revolutiongfx/works/11350959-the-eternal-lie?p=t-shirt&style=vneck&body_color=black&size=large&print_location=front"
-    description: T-shirt.
-    price: $29.74
-  - name: "This One's Cool, Too"
-    link: "http://www.redbubble.com/people/trudelstrudel/works/14528501-endure-and-survive-the-last-of-us-transparent?p=t-shirt&style=mens&body_color=black&size=large&print_location=front"
-    description: T-shirt.
-    price: $22.74
-  - name: "Oh, and I Like This One"
-    link: "http://www.redbubble.com/people/lonelyon/works/10702227-the-last-of-peanuts-ellie?p=t-shirt&style=mens&body_color=creme&size=large&print_location=front"
-    description: T-shirt.
-    price: $24.18
-  - name: Not a Shirt
-    link: "https://www.insertcoinclothing.com/guys-tees/ellie.html"
-    description: Just kidding. T-shirt.
-    price: £22.00
-  - name: And Another
-    link: "http://www.redbubble.com/people/cassiarose/works/21169965-aperture-science-blue?p=mens-graphic-t-shirt&style=mens-graphic-t-shirt&body_color=black&size=large"
-    description: T-shirt.
-    price: $29.25
-  - name: Last One
-    link: "http://www.redbubble.com/people/adrienneorpheus/works/9612240-end-patriarchy?p=t-shirt&style=mens&body_color=white&size=large&print_location=front"
-    description: T-shirt.
-    price: $24.80
-postscript:
-  - text: "All shirts in large, please."
+  - name: Fire Emblem Fates: Birthright
+    link: "http://fireemblemfates.nintendo.com/"
+    description: 3DS game.
+    price: $40
+    note: "Comes in another version, “Fire Emblem Fates: Conquest”, which is also acceptable (whichever you can find locally?)"
+  - name: Hyrule Warriors Legends
+    link: "http://www.nintendo.com/games/detail/hyrule-warriors-legends-3ds"
+    description: 3DS game.
+    price: $40
+  - name: Optical Audio Cable
+    link: "https://en.wikipedia.org/wiki/TOSLINK"
+    description: Optical fiber connector for carrying a digital audio stream.
+    price: Around $10
+  - name: Games from my Steam wishlist
+    link: "http://steamcommunity.com/id/psiradish/wishlist/"
+    description: PC games
+    price: Prices vary
+    osublist:
+      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I will write down for you."
+      - text: "Browse [my wishlist](http://steamcommunity.com/id/psiradish/wishlist/). Select games by clicking “Add to Cart” on their store page."
+      - text: "When you're done browsing, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
+      - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
+      - text: Click “Schedule delivery...” and put in Christmas day (preferably the morning of).
+      - text: Click “Continue” and then it's just the usual buying-shit-online steps (I suggest that you *DON'T* save your credit card information on this account).
+# postscript:
+#   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
 old:
   - name: Nothin'
     link: "____"
