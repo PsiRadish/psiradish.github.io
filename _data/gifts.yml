@@ -11,7 +11,7 @@ current:
       icon: info-circle
   - name: Optical Audio Cable
     link: "https://en.wikipedia.org/wiki/TOSLINK"
-    description: Optical fiber connector for carrying a digital audio stream.
+    description: “TOSLINK” optical fiber connector for carrying a digital audio stream.
     price: Around $10
   - name: Hyrule Warriors Legends
     link: "http://www.nintendo.com/games/detail/hyrule-warriors-legends-3ds"
