@@ -95,77 +95,75 @@ ul
     list-style   : none;
     padding-left : 10px;
     margin       : 0;
-}
-
-.note
-{
-    // margin: 0;
-    // padding: 0;
-    padding-left: 1.1em;
-    font-size: inherit;
     
-    &[class*=" fa-"] {
-        position: relative;
+    li.note
+    {
+        // margin: 0;
+        // padding: 0;
+        padding-left: 1.1em;
+        font-size: inherit;
         
-        &::before {
-            display: inline-block;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 1;
-            font-size-adjust: none;
-            font-stretch: normal;
-            font-feature-settings: normal;
-            font-language-override: normal;
-            font-kerning: auto;
-            font-synthesis: weight style;
-            font-variant: normal;
-            font-size: inherit;
-            text-rendering: auto;
+        &[class*=" fa-"] {
+            position: relative;
             
-            position: absolute;
-            top: 1px;
-            margin-left: -1.1em;
+            &::before {
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                font-size-adjust: none;
+                font-stretch: normal;
+                font-feature-settings: normal;
+                font-language-override: normal;
+                font-kerning: auto;
+                font-synthesis: weight style;
+                font-variant: normal;
+                font-size: inherit;
+                text-rendering: auto;
+                
+                position: absolute;
+                top: 1px;
+                margin-left: -1.1em;
+            }
+        }
+        // &::before
+        // {
+        //     display: inline-block;
+        //     font-family: FontAwesome;
+        //     font-style: normal;
+        //     font-weight: normal;
+        //     line-height: 1;
+        //     font-size-adjust: none;
+        //     font-stretch: normal;
+        //     font-feature-settings: normal;
+        //     font-language-override: normal;
+        //     font-kerning: auto;
+        //     font-synthesis: weight style;
+        //     font-variant: normal;
+        //     font-size: inherit;
+        //     text-rendering: auto;
+            
+        //     content: "\f06a";
+        // }
+        > p
+        {
+            margin: 0;
         }
     }
-    // &::before
-    // {
-    //     display: inline-block;
-    //     font-family: FontAwesome;
-    //     font-style: normal;
-    //     font-weight: normal;
-    //     line-height: 1;
-    //     font-size-adjust: none;
-    //     font-stretch: normal;
-    //     font-feature-settings: normal;
-    //     font-language-override: normal;
-    //     font-kerning: auto;
-    //     font-synthesis: weight style;
-    //     font-variant: normal;
-    //     font-size: inherit;
-    //     text-rendering: auto;
+    li.print-url
+    {
+        padding: 0;
+        // color: inherit;
+        // background-color: inherit;
+        // border: none;
         
-    //     content: "\f06a";
-    // }
-    // > p
-    // {
-    //     display: inline; /* So it appears on same line as Font Awesome icon */
-    // }
+        font-family: $font-url;
+        font-size: 0.8em;
+        
+        visibility: hidden;
+    }
 }
-
-// /* Repurpose <code> for printing out URLs */
-// code
-// {
-//     padding: 0;
-//     color: inherit;
-//     background-color: inherit;
-//     border: none;
-    
-//     font-family: $font-url;
-//     font-size: 0.8em;
-    
-//     visibility: hidden;
-// }
 
 .center-auto
 {
@@ -357,7 +355,7 @@ ul
         content : "";
     }
     
-    code
+    ul > li.print-url
     {
         visibility: visible;
     }

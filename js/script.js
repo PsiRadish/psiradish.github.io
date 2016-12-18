@@ -34,7 +34,7 @@ $(document).ready(function()
     $(".gift-list ol > li").each(function()
     {
         var url = $(this).children('a').attr('href');
-        var newListItem = $('<li><code>' + url + '</code></li>');
+        var newListItem = $('<li class="print-url">' + url + '</li>');
         
         $(this).children('ul').append(newListItem);
     });
