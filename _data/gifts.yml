@@ -6,26 +6,28 @@ current:
     link: "http://fireemblemfates.nintendo.com/"
     description: 3DS game.
     price: $40
-    note: "Comes in another version, “Fire Emblem Fates: Conquest”, which is also acceptable (whichever you can find locally?)"
-  - name: Hyrule Warriors Legends
-    link: "http://www.nintendo.com/games/detail/hyrule-warriors-legends-3ds"
-    description: 3DS game.
-    price: $40
+    note:
+      text: "Comes in another version, “Fire Emblem Fates: Conquest”, which is also acceptable (whichever you can find locally?)"
+      icon: info-circle
   - name: Optical Audio Cable
     link: "https://en.wikipedia.org/wiki/TOSLINK"
     description: Optical fiber connector for carrying a digital audio stream.
     price: Around $10
+  - name: Hyrule Warriors Legends
+    link: "http://www.nintendo.com/games/detail/hyrule-warriors-legends-3ds"
+    description: 3DS game.
+    price: $40
   - name: Games from my Steam wishlist
     link: "http://steamcommunity.com/id/psiradish/wishlist/"
-    description: PC games
+    description: PC games.
     price: Prices vary
     osublist:
-      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I will write down for you."
+      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I made for you."
       - text: "Browse [my wishlist](http://steamcommunity.com/id/psiradish/wishlist/). Select games by clicking “Add to Cart” on their store page."
-      - text: "When you're done browsing, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
+      - text: "When you're done, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
       - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
       - text: Click “Schedule delivery...” and put in Christmas day (preferably the morning of).
-      - text: Click “Continue” and then it's just the usual buying-shit-online steps (I suggest that you *DON'T* save your credit card information on this account).
+      - text: Click “Continue” and then it's just the usual buying-shit-online steps.
 # postscript:
 #   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
 old:

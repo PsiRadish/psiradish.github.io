@@ -73,13 +73,18 @@ ol
 ol.sublist {
     > li
     {
+        margin-top: 3px;
         counter-increment: sublist-num;
         
         &::before {
-            content: counter(sublist-num);
+            content: counter(sublist-num) ")";
                         
             font-size: 80%;
             line-height: 1.375;
+        }
+        
+        > p {
+            margin: 0;
         }
     }
 }
@@ -92,53 +97,75 @@ ul
     margin       : 0;
 }
 
-/* Repurpose blockquote for adding important notes */
-blockquote, .note
+.note
 {
-    margin: 0;
-    padding: 0;
-    border: none;
+    // margin: 0;
+    // padding: 0;
+    padding-left: 1.1em;
     font-size: inherit;
     
-    /* Font Awesome circled exclamation mark */
-    &::before
-    {
-        display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        font-size-adjust: none;
-        font-stretch: normal;
-        font-feature-settings: normal;
-        font-language-override: normal;
-        font-kerning: auto;
-        font-synthesis: weight style;
-        font-variant: normal;
-        font-size: inherit;
-        text-rendering: auto;
+    &[class*=" fa-"] {
+        position: relative;
         
-        content: "\f06a";
+        &::before {
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            font-size-adjust: none;
+            font-stretch: normal;
+            font-feature-settings: normal;
+            font-language-override: normal;
+            font-kerning: auto;
+            font-synthesis: weight style;
+            font-variant: normal;
+            font-size: inherit;
+            text-rendering: auto;
+            
+            position: absolute;
+            top: 1px;
+            margin-left: -1.1em;
+        }
     }
-    > p
-    {
-        display: inline; /* So it appears on same line as Font Awesome icon */
-    }
+    // &::before
+    // {
+    //     display: inline-block;
+    //     font-family: FontAwesome;
+    //     font-style: normal;
+    //     font-weight: normal;
+    //     line-height: 1;
+    //     font-size-adjust: none;
+    //     font-stretch: normal;
+    //     font-feature-settings: normal;
+    //     font-language-override: normal;
+    //     font-kerning: auto;
+    //     font-synthesis: weight style;
+    //     font-variant: normal;
+    //     font-size: inherit;
+    //     text-rendering: auto;
+        
+    //     content: "\f06a";
+    // }
+    // > p
+    // {
+    //     display: inline; /* So it appears on same line as Font Awesome icon */
+    // }
 }
 
-/* Repurpose <code> for printing out URLs */
-code
-{
-    padding: 0;
-    color: inherit;
-    background-color: inherit;
-    border: none;
+// /* Repurpose <code> for printing out URLs */
+// code
+// {
+//     padding: 0;
+//     color: inherit;
+//     background-color: inherit;
+//     border: none;
     
-    font-family: $font-url;
-    font-size: 0.8em;
+//     font-family: $font-url;
+//     font-size: 0.8em;
     
-    visibility: hidden;
-}
+//     visibility: hidden;
+// }
 
 .center-auto
 {
