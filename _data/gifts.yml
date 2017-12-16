@@ -2,49 +2,22 @@ prescript:
   - text: "All t-shirts size large, please."
   - text: (And don't change the colors or anything.)
 current:
-  - name: Titans Joel + Ellie Figures
-    link: "https://www.amazon.com/Last-Titans-Vinyl-Figures-Ellie/dp/B01AGYRB1K"
-    description: Vinyl figures.
-    price: $18.88
-    note:
-      text: Only 2 left in stock!
-      icon: exclamation-circle
-  - name: "The Last of Us: American Dreams"
-    link: "https://www.amazon.com/Last-Us-American-Dreams/dp/1616552123"
-    description: Graphic novel.
-    price: $11.71
+  - name: "Steam Controller"
+    link: "http://store.steampowered.com/app/353370/Steam_Controller/"
+    description: Game controller.
+    price: $49.99
   - name: Sergeant Jyn Erso
     link: "https://www.amazon.com/Star-Wars-Black-Rogue-Sergeant/dp/B01943RZDS"
     description: Action figure.
-    price: $9.90
-  - name: “Rewind” T-Shirt
-    link: "https://www.teepublic.com/t-shirt/646857-rewind"
-    description: Upper-torso apparel.
-    price: $20
-  - name: “I Am Made of Love” T-Shirt
-    link: "http://www.cartoonnetworkshop.com/product/steven+universe+i+am+made+of+love+white+t-shirt+sttvtat689.do"
-    description: Upper-torso apparel.
-    price: $24.95
+    price: $7.49
   - name: “Bae over Bay” T-Shirt
-    link: "https://www.redbubble.com/people/dejameprobar/works/23984899-life-is-strange-bae-over-bay-pricefield?&size=large"
+    link: "https://www.redbubble.com/people/dejameprobar/works/23984899-life-is-strange-bae-over-bay-pricefield?p=t-shirt&size=large"
     description: Upper-torso apparel.
-    price: $27.90
-  - name: “Life is Strange” T-Shirt
-    link: "https://www.teepublic.com/t-shirt/508305-life-is-strange"
-    description: Upper-torso apparel.
-    price: $20
-  - name: “#SHORTYSQUAD” T-Shirt
-    link: "http://www.cartoonnetworkshop.com/product/steven+universe+%23shortysquad+white+t-shirt+sttvtat684.do"
-    description: Upper-torso apparel.
-    price: $24.95
-  - name: Rey
-    link: "https://www.amazon.com/Star-Wars-Black-6-Inch-Jakku/dp/B00SD8I11G"
-    description: Action figure.
-    price: $15.90
+    price: $21.94
   - name: “Hole to Another Universe” T-Shirt
-    link: "https://www.redbubble.com/people/artisticaviary/works/15825692-hole-to-another-universe-graffiti-life-is-strange-tilted?p=t-shirt&size=large"
+    link: "https://www.redbubble.com/people/artisticaviary/works/15825692-hole-to-another-universe-graffiti-life-is-strange-tilted?p=t-shirt&size=large&body_color=heather_grey"
     description: Upper-torso apparel.
-    price: $25.22
+    price: $19.83
 # postscript:
 #   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
 example:
