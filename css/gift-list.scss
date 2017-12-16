@@ -36,6 +36,11 @@ body
     font-size        : $font-size-base;
 }
 
+p + ol
+{
+    padding-top: $font-size-small * $line-height-gift;
+}
+
 ol
 {
     margin: 0;
@@ -61,11 +66,6 @@ ol
         {
             text-decoration: underline;
         }
-    }
-    
-    p + &
-    {
-        padding-top: $font-size-small * $line-height-gift;
     }
 }
 ol.sublist {
