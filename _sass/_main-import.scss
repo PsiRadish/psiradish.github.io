@@ -24,23 +24,19 @@
 //     }
 // }
 
-// RADISH
-$font-size-base: 16px;
+$font-family-base: Corbel, Gill Sans, Lato, Gill Sans MT, Lucida Grande, Lucida Sans, Trebuchet MS, sans-serif;
+$font-size-base:   16px;
+$font-size-small:  $font-size-base * 0.875;
+$line-height-base: 20px / $font-size-base;
 
-// Our variables ++ RADISH: Mine now, mwahahaha and such
-$base-font-family: Corbel, Gill Sans, Lato, Gill Sans MT, Lucida Grande, Lucida Sans, Trebuchet MS, sans-serif;
-$base-font-size:   $font-size-base;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 20px / $font-size-base;
-
-$header-font-family         : Consolas, Monaco, Monofur, monospace;
+$font-family-header         : Consolas, Monaco, Monofur, monospace;
 $font-size-h6               : $font-size-base + 0;  // 16px
 $font-size-h5               : $font-size-base + 1;  // 17px
 $font-size-h4               : $font-size-base + 2;  // 18px
 $font-size-h3               : $font-size-base + 2;  // 18px
 $font-size-h2               : $font-size-base + 10; // 26px
 $font-size-h1               : $font-size-base + 26; // 42px
-$header-line-height         : 1;
+$line-height-header         : 1;
 
 $spacing-unit:     15px;
 

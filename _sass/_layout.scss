@@ -29,7 +29,7 @@
 .site-title
 {
     font-size: $font-size-h1;
-    font-family: $header-font-family;
+    font-family: $font-family-header;
     // line-height: $nav-height;
     // letter-spacing: -1px;
     margin-bottom: 0;
@@ -90,10 +90,10 @@
     .page-link
     {
         // color: $nav-color;
-        line-height: $base-line-height;
+        line-height: $line-height-base;
         
         font-size: $font-size-h4;
-        // font-family: $header-font-family;
+        // font-family: $font-family-header;
         
         // Gaps between nav items, but not on the first one
         &:not(:first-child)
@@ -201,7 +201,7 @@ hr
 
 .footer-col-wrapper 
 {
-    font-size: $base-font-size - 1;
+    font-size: $font-size-base - 1;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -291,7 +291,7 @@ hr
 
 .post-meta 
 {
-    font-size: $small-font-size;
+    font-size: $font-size-small;
     color: rgba($text-color, 0.51);
 }
 
@@ -315,7 +315,7 @@ hr
 {
     // font-size: $font-size-h1;
     // letter-spacing: -1px;
-    line-height: $header-line-height;
+    line-height: $line-height-header;
     
     @include media-query($on-laptop) 
     {
@@ -329,7 +329,7 @@ hr
     
     @include media-query($on-laptop)
     {
-        font-size: $base-font-size - 2;
+        font-size: $font-size-base - 2;
         
         h1, .h1
         {
