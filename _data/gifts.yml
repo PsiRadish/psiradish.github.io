@@ -1,23 +1,40 @@
 prescript:
-  - text: "All t-shirts size large, please."
-  - text: (And don't change the colors or anything.)
+  - text: All t-shirts size large, please.
+  - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
 current:
-  - name: "Steam Controller"
-    link: "http://store.steampowered.com/app/353370/Steam_Controller/"
-    description: Game controller.
-    price: $49.99
-  - name: Sergeant Jyn Erso
-    link: "https://www.amazon.com/Star-Wars-Black-Rogue-Sergeant/dp/B01943RZDS"
-    description: Action figure.
-    price: $7.49
+  - name: Battlefield 5
+    link: "https://www.origin.com/usa/en-us/store/battlefield/battlefield-v"
+    description: PC game.
+    price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/18)"
+    osublist:
+      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click the ⌄ on the big orange “Get the Game” button, then “Purchase as a gift”"
+      - text: Click “Purchase as a gift - $59.99” under “Standard Edition”
+      - text: Sign in with credentials I will provide by some means to be determined
+      - text: Click inside the box for “PsiRadish” so the ⃝+ ⊕ ㊉ becomes a ⃝✓, then click Next
+      - text: Customize the From field and optional message if you like, then click Next.
+      - text: Add a new card (and probably _don't_ check the “Save my billing information” box) and click “Proceed to Review Order”
+      - text: Click “Enter Promo Code” to the far left of Total. Enter `SAVE30` in the box that appears and then click “Apply Code”. Hopefully you will see the Total drop to ~$42.
+      - text: Click “Pay Now” and hopefully everything afterward is self-explanatory (because I couldn't very well click it myself to find out).
+  - name: Funko Pop Garnet
+    link: "https://www.amazon.com/Funko-Animation-Steven-Universe-GARNET/dp/B01CTCN2U6"
+    description: Vinyl figure.
+    price: $45
   - name: “Bae over Bay” T-Shirt
     link: "https://www.redbubble.com/people/dejameprobar/works/23984899-life-is-strange-bae-over-bay-pricefield?p=t-shirt&size=large"
     description: Upper-torso apparel.
-    price: $21.94
+    price: $20.73
+  - name: Mae Borowski’s “Null” T-Shirt
+    link: "https://www.redbubble.com/people/b-lindz-design/works/31064195-mae-borowski-shirt-night-in-the-woods?p=mens-graphic-t-shirt&size=large"
+    description: Upper-torso apparel.
+    price: $27.57
+  - name: NitW “Dreamer Without Chains” T-Shirt
+    link: "https://www.redbubble.com/people/asilentcowbell/works/32484255-dreamer-without-chains?p=t-shirt&style=mens&size=large"
+    description: Upper-torso apparel.
+    price: $19.90
   - name: “Hole to Another Universe” T-Shirt
     link: "https://www.redbubble.com/people/artisticaviary/works/15825692-hole-to-another-universe-graffiti-life-is-strange-tilted?p=t-shirt&size=large&body_color=heather_grey"
     description: Upper-torso apparel.
-    price: $19.83
+    price: $20.23
 # postscript:
 #   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
 example:

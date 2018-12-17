@@ -2,7 +2,7 @@
 permalink: /gift/
 layout: gift_list
 occasion: Christmas
-year: 2017
+year: 2018
 ---
 
 {% if site.data.gifts.prescript %}
@@ -27,6 +27,13 @@ year: 2017
       <li>{{ subitem.text | markdownify }}</li>
      {% endfor %}
       </ol></li>
+    {% endif %}
+    {% if gift.usublist %}
+      <li><ul class="sublist">
+     {% for subitem in gift.usublist %}
+      <li>{{ subitem.text | markdownify }}</li>
+     {% endfor %}
+      </ul></li>
     {% endif %}
     </ul>
   </li>
