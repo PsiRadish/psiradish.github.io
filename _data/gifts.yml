@@ -6,13 +6,15 @@ current:
     link: "https://www.origin.com/usa/en-us/store/battlefield/battlefield-v"
     description: PC game.
     price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/2018)"
-    note: See instructions below.
+    note:
+      icon: list-ol
+      text: See instructions below.
     osublist:
-      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click the down arrow on the big orange __Get the Game__ button, then click __Purchase as a gift__"
+      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click __the down arrow__ on the big orange __Get the Game__ button, then click __Purchase as a gift__"
       - text: Click __Purchase as a gift - $59.99__ under __Standard Edition__
       - text: Sign in with credentials I will provide once I get home
       - text: Click inside the box for “PsiRadish” so the <span class='circled'>+</span> becomes a <span class='circled'>✔</span>, then click __Next__
-      - text: Customize the From field and optional message if you like, then click __Next__
+      - text: Customize the From field and message if you like, then click __Next__
       - text: Add a new card (and probably _don't_ check the “Save my billing information” box) and click __Proceed to Review Order__
       - text: Click __Enter Promo Code__ to the far left of __Total__. Enter `SAVE30` in the box that appears and then click __Apply Code__. Hopefully you will see __Total__ drop to ~$42.
       - text: Click __Pay Now__ and hopefully everything afterward is self-explanatory (because I couldn't very well click it myself to find out).
