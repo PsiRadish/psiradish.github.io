@@ -7,7 +7,7 @@ current:
     description: PC game.
     price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/2018)"
     note:
-      icon: list-ol
+      icon: info-circle
       text: See instructions below.
     osublist:
       - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click __the down arrow__ on the big orange __Get the Game__ button, then click __Purchase as a gift__"
@@ -46,8 +46,8 @@ example:
     description: Ain't nothin.
     price: $
     note:
-      text: Something of note!
       icon: info-circle
+      text: Something of note!
   - name: “_” T-Shirt
     link: "____"
     description: Upper-torso apparel.
