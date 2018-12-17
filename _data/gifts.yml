@@ -5,16 +5,17 @@ current:
   - name: Battlefield 5
     link: "https://www.origin.com/usa/en-us/store/battlefield/battlefield-v"
     description: PC game.
-    price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/18)"
+    price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/2018)"
+    note: See instructions below.
     osublist:
-      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click the ⌄ on the big orange “Get the Game” button, then “Purchase as a gift”"
-      - text: Click “Purchase as a gift - $59.99” under “Standard Edition”
-      - text: Sign in with credentials I will provide by some means to be determined
-      - text: Click inside the box for “PsiRadish” so the ⃝+ ⊕ ㊉ becomes a ⃝✓, then click Next
-      - text: Customize the From field and optional message if you like, then click Next.
-      - text: Add a new card (and probably _don't_ check the “Save my billing information” box) and click “Proceed to Review Order”
-      - text: Click “Enter Promo Code” to the far left of Total. Enter `SAVE30` in the box that appears and then click “Apply Code”. Hopefully you will see the Total drop to ~$42.
-      - text: Click “Pay Now” and hopefully everything afterward is self-explanatory (because I couldn't very well click it myself to find out).
+      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click the down arrow on the big orange __Get the Game__ button, then click __Purchase as a gift__"
+      - text: Click __Purchase as a gift - $59.99__ under __Standard Edition__
+      - text: Sign in with credentials I will provide once I get home
+      - text: Click inside the box for “PsiRadish” so the <span class='circled'>+</span> becomes a <span class='circled'>✔</span>, then click __Next__
+      - text: Customize the From field and optional message if you like, then click __Next__
+      - text: Add a new card (and probably _don't_ check the “Save my billing information” box) and click __Proceed to Review Order__
+      - text: Click __Enter Promo Code__ to the far left of __Total__. Enter `SAVE30` in the box that appears and then click __Apply Code__. Hopefully you will see __Total__ drop to ~$42.
+      - text: Click __Pay Now__ and hopefully everything afterward is self-explanatory (because I couldn't very well click it myself to find out).
   - name: Funko Pop Garnet
     link: "https://www.amazon.com/Funko-Animation-Steven-Universe-GARNET/dp/B01CTCN2U6"
     description: Vinyl figure.
