@@ -162,6 +162,16 @@ ul
     float   : right;
 }
 
+.circled {
+    display: inline-block;
+    width:  $line-height-gift * 1em;
+    height: $line-height-gift * 1em;
+    line-height: 1em;
+    text-align: center;
+    border: 1px currentColor solid;
+    border-radius: 100%;
+}
+
 // h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 // {
 //     // font-family: $font-heading;
