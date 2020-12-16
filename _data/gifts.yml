@@ -7,7 +7,7 @@ current:
     description: PC games.
     price: Prices vary
     osublist:
-      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I made for you."
+      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account information I will provide in meatspace."
       - text: "Browse [my wishlist](http://steamcommunity.com/id/psiradish/wishlist/). Select games by clicking “Add to Cart” on their store page."
       - text: "When you're done, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
       - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
