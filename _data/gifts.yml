@@ -1,43 +1,18 @@
-prescript:
-  - text: All t-shirts size large, please.
-  - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
+# prescript:
+#   - text: All t-shirts size large, please.
+#   - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
 current:
-  - name: Battlefield 5
-    link: "https://www.origin.com/usa/en-us/store/battlefield/battlefield-v"
-    description: PC game.
-    price: "$60 ($42 with code “SAVE30” before 10:AM PST on 12/18/2018)"
-    note:
-      icon: info-circle
-      text: See instructions below.
+  - name: Games from my Steam wishlist
+    link: "http://steamcommunity.com/id/psiradish/wishlist/"
+    description: PC games.
+    price: Prices vary
     osublist:
-      - text: "On the [page linked to above](https://www.origin.com/usa/en-us/store/battlefield/battlefield-v), click __the down arrow__ on the big orange __Get the Game__ button, then click __Purchase as a gift__"
-      - text: Click __Purchase as a gift - $59.99__ under __Standard Edition__
-      - text: Sign in with credentials I will provide once I get home
-      - text: Click inside the box for “PsiRadish” so the <span class='circled'>+</span> becomes a <span class='circled'>✔</span>, then click __Next__
-      - text: Customize the From field and message if you like, then click __Next__
-      - text: Add a new card (and probably _don't_ check the “Save my billing information” box) and click __Proceed to Review Order__
-      - text: Click __Enter Promo Code__ to the far left of __Total__. Enter `SAVE30` in the box that appears and then click __Apply Code__. Hopefully you will see __Total__ drop to ~$42.
-      - text: Click __Pay Now__ and hopefully everything afterward is self-explanatory (because I couldn't very well click it myself to find out).
-  - name: Funko Pop Garnet
-    link: "https://www.amazon.com/Funko-Animation-Steven-Universe-GARNET/dp/B01CTCN2U6"
-    description: Vinyl figure.
-    price: $45
-  - name: “Bae over Bay” T-Shirt
-    link: "https://www.redbubble.com/people/dejameprobar/works/23984899-life-is-strange-bae-over-bay-pricefield?p=t-shirt&size=large"
-    description: Upper-torso apparel.
-    price: $20.73
-  - name: Mae Borowski’s “Null” T-Shirt
-    link: "https://www.redbubble.com/people/b-lindz-design/works/31064195-mae-borowski-shirt-night-in-the-woods?p=mens-graphic-t-shirt&size=large"
-    description: Upper-torso apparel.
-    price: $27.57
-  - name: NitW “Dreamer Without Chains” T-Shirt
-    link: "https://www.redbubble.com/people/asilentcowbell/works/32484255-dreamer-without-chains?p=t-shirt&style=mens&size=large"
-    description: Upper-torso apparel.
-    price: $19.90
-  - name: “Hole to Another Universe” T-Shirt
-    link: "https://www.redbubble.com/people/artisticaviary/works/15825692-hole-to-another-universe-graffiti-life-is-strange-tilted?p=t-shirt&size=large&body_color=heather_grey"
-    description: Upper-torso apparel.
-    price: $20.23
+      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I made for you."
+      - text: "Browse [my wishlist](http://steamcommunity.com/id/psiradish/wishlist/). Select games by clicking “Add to Cart” on their store page."
+      - text: "When you're done, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
+      - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
+      - text: Click “Schedule delivery...” and put in Christmas day (preferably the morning of).
+      - text: Click “Continue” and then it's just the usual buying-shit-online steps.
 # postscript:
 #   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
 example:
@@ -57,14 +32,3 @@ someday:
     link: "http://www.cartoonnetworkshop.com/product/steven+universe+crystal+gems+adult+fitted+light+blue+t-shirt+sttvtsf347.do"
     description: Upper-torso apparel.
     price: $24.95
-  - name: Games from my Steam wishlist
-    link: "http://steamcommunity.com/id/psiradish/wishlist/"
-    description: PC games.
-    price: Prices vary
-    osublist:
-      - text: "[Log in to Steam](https://steamcommunity.com/login/home/) with the account I made for you."
-      - text: "Browse [my wishlist](http://steamcommunity.com/id/psiradish/wishlist/). Select games by clicking “Add to Cart” on their store page."
-      - text: "When you're done, go to [your cart](http://store.steampowered.com/cart/) and click “Purchase as a gift”."
-      - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
-      - text: Click “Schedule delivery...” and put in Christmas day (preferably the morning of).
-      - text: Click “Continue” and then it's just the usual buying-shit-online steps.
