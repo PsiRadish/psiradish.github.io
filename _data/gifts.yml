@@ -17,19 +17,22 @@ current:
     description: Book
     price: $9.49
     note:
-      text: 👌 I already have the 4th book (Air Logic), if you're wondering why I'm not asking for it.
+      emoji: 👌
+      text: I already have the 4th book (Air Logic), if you're wondering why I'm not asking for it.
   - name: Gideon the Ninth (Hardcover)
     link: "https://www.amazon.com/Gideon-Ninth-Tamsyn-Muir/dp/1250313198/"
     description: Hardcover Book
     price: $24.99
     note:
-      text: ☝ Seriously, I want the hardcover.
+      emoji: ☝
+      text: Seriously, I want the hardcover.
   - name: Harrow the Ninth (Hardcover)
     link: "https://www.amazon.com/Harrow-Ninth-Locked-Tomb-Trilogy/dp/1250313228/"
     description: Hardcover Book
     price: $20.99
     note:
-      text: ☝ Seriously, I want the hardcover.
+      emoji: ☝
+      text: Seriously, I want the hardcover.
 example:
   - name: Games from my Steam wishlist
     link: "http://steamcommunity.com/id/psiradish/wishlist/"
