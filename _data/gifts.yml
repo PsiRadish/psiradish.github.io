@@ -2,6 +2,37 @@
 #   - text: All t-shirts size large, please.
 #   - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
 current:
+# postscript:
+#   - text: "Look behind you, a three-headed monkey!"
+  - name: Fire Logic
+    link: "https://www.amazon.com/gp/product/B00E5LUOSI"
+    description: Book
+    price: $9.99
+  - name: Earth Logic
+    link: "https://www.amazon.com/gp/product/B00LVH6SDE"
+    description: Book
+    price: $9.49
+  - name: Water Logic
+    link: "https://www.amazon.com/gp/product/B001CBEIK4"
+    description: Book
+    price: $9.49
+    note:
+      text: 👌 I already have the 4th book (Air Logic), if you're wondering why I'm not asking for it.
+  - name: Gideon the Ninth (Hardcover)
+    link: "https://www.amazon.com/Gideon-Ninth-Tamsyn-Muir/dp/1250313198/"
+    description: Hardcover Book
+    price: $24.99
+    note:
+      icon: hand-point-up
+      text: Seriously, I want the hardcover.
+  - name: Harrow the Ninth (Hardcover)
+    link: "https://www.amazon.com/Harrow-Ninth-Locked-Tomb-Trilogy/dp/1250313228/"
+    description: Hardcover Book
+    price: $20.99
+    note:
+      icon: hand-point-up
+      text: Seriously, I want the hardcover.
+example:
   - name: Games from my Steam wishlist
     link: "http://steamcommunity.com/id/psiradish/wishlist/"
     description: PC games.
@@ -13,9 +44,6 @@ current:
       - text: "On the next screen select “Send my gift directly through Steam”, then under “Your friends” select **PsiRadish**."
       - text: Click “Schedule delivery...” and put in Christmas day (preferably the morning of).
       - text: Click “Continue” and then it's just the usual buying-shit-online steps.
-# postscript:
-#   - text: "[Click here](https://support.steampowered.com/kb_article.php?p_faqid=549#gifts-whatare) for how to send a gift on Steam."
-example:
   - name: Nothin'
     link: "____"
     description: Ain't nothin.
