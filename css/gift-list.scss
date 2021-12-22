@@ -102,11 +102,13 @@ ul
     {
         font-size: inherit;
         
-        &[class*=" fa-"] {
+        &[class*=" fa-"]
+        {
             padding-left: 1.1em;
             position: relative;
             
-            &::before {
+            &::before
+            {
                 content: '';
                 
                 display: inline-block;
@@ -132,6 +134,7 @@ ul
         
         > p
         {
+            display: inline-block;
             margin: 0;
         }
     }
@@ -144,6 +147,11 @@ ul
         
         visibility: hidden;
     }
+}
+
+.emoji
+{
+    font-family: Noto Color Emoji, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .center-auto
