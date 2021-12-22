@@ -23,15 +23,13 @@ current:
     description: Hardcover Book
     price: $24.99
     note:
-      icon: hand-point-up
-      text: Seriously, I want the hardcover.
+      text: ☝ Seriously, I want the hardcover.
   - name: Harrow the Ninth (Hardcover)
     link: "https://www.amazon.com/Harrow-Ninth-Locked-Tomb-Trilogy/dp/1250313228/"
     description: Hardcover Book
     price: $20.99
     note:
-      icon: hand-point-up
-      text: Seriously, I want the hardcover.
+      text: ☝ Seriously, I want the hardcover.
 example:
   - name: Games from my Steam wishlist
     link: "http://steamcommunity.com/id/psiradish/wishlist/"
