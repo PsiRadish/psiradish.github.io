@@ -20,7 +20,7 @@ year: 2020
       <li>{{ gift.price }}</li>
     {% if gift.note %}
       {% if gift.note.icon %}
-        <li class="note fa-{{gift.note.icon}}"> {{ gift.note.text | markdownify }}</li>
+        <li class="note fas fa-{{gift.note.icon}}"> {{ gift.note.text | markdownify }}</li>
       {% else %}
         <li class="note">{{ gift.note.text | markdownify }}</li>
       {% endif %}
