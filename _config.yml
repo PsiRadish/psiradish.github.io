@@ -1,6 +1,7 @@
 # Site settings
 title: Kyle Fiegener's Portfolio
-email: KyleFiegener@gmail.com
+# email: KyleFiegener@gmail.com
+email: Email Address
 author: Kyle Fiegener
 description: Kyle Fiegener is a web developer who enjoys the merging of art and science that comes with full-stack development.
 baseurl: "" # the subpath of your site, e.g. /blog/

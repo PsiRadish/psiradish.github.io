@@ -3,8 +3,10 @@ last_name: Fiegener
 occupation: Full-Stack Web Developer
 contacts:
   left:
-    - text: KyleFiegener@gmail.com
-      href: "mailto:KyleFiegener@gmail.com"
+    # - text: KyleFiegener@gmail.com
+    #   href: "mailto:KyleFiegener@gmail.com"
+    - text: Email Address
+      href: "#"
       icon: envelope
     - text: http://psiradish.github.io
       href: "http://psiradish.github.io/"
