@@ -271,33 +271,14 @@ ul.sublist
     background-color   : #FFF;
     width              : $page-width !important;
     max-width          : $page-width !important;
-    height             : $page-height !important;
     position           : absolute;
     left               : 0;
     top                : 0;
     overflow           : hidden;
-    
-    &.page-2
-    {
-        top : $page-height + $page-gap;
-    }
-    &.page-3
-    {
-        top : 2 * ($page-height + $page-gap);
-    }
-    &.page-4
-    {
-        top : 3 * ($page-height + $page-gap);
-    }
-    &.page-5
-    {
-        top : 4 * ($page-height + $page-gap);
-    }
 }
 .page-content
 {
     margin: $page-margin;
-    height: $page-height - ($page-margin * 2);
 }
 
 .document-container
