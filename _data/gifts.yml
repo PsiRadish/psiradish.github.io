@@ -16,9 +16,9 @@ current:
     description: Upper-torso apparel.
     price: $19.09
     note:
-      icon: info-circle
+      emoji: ℹ
       text: You'll need to click the [View Product Details] button the first time you visit the page.
-    osublist:
+    usublist:
       - text: "Size: Adult L"
       - text: "Style: Basic Dark T-Shirt"
       - text: "Color: Black"
@@ -26,7 +26,7 @@ current:
     link: "https://www.redbubble.com/i/t-shirt/Wherever-you-are-light-this-up-and-I_ll-find-you-by-BakulKaosID2/96231375.P0PKY"
     description: Upper-torso apparel.
     price: $19.82
-    osublist:
+    usublist:
       - text: "Color: Black"
       - text: "Size: L"
       - text: "Print Location: Front"
@@ -34,7 +34,7 @@ current:
     link: "https://www.redbubble.com/i/t-shirt/Piltover-Academy-Logo-by-Skella896/97666304.2OUYH"
     description: Upper-torso apparel.
     price: $16.99
-    osublist:
+    usublist:
       - text: "Color: Gold"
       - text: "Size: L"
       - text: "Print Location: Front"
@@ -42,7 +42,7 @@ current:
     link: "https://www.redbubble.com/i/t-shirt/The-Last-Drop-by-VirginiaRing/97545720.FQKHD"
     description: Upper-torso apparel.
     price: $16.99
-    osublist:
+    usublist:
       - text: "Color: Dark Grey"
       - text: "Size: L"
       - text: "Print Location: Front"
@@ -50,16 +50,16 @@ current:
     link: "https://poshmark.com/listing/Arcane-Science-Fantasy-Caitlyn-Unisex-TShirt-61ceb1c8e0b7c79b3baf08cd#utm_source=gdm_unpaid&size_L"
     description: Upper-torso apparel.
     price: $18
-    osublist:
+    usublist:
       - text: "Size: L"
   - name: Arcane Poster T-Shirt
     link: "https://vuccie.com/product/arcane-lol-t-shirt-gifts/"
     description: Upper-torso apparel.
     price: $19.99
     note:
-      icon: info-circle
+      emoji: ℹ
       text: You will need to set Fit Type and Type before the Color and Size options will appear.
-    osublist:
+    usublist:
       - text: "Fit Type: Men (⚠ defaults to Women, so remember to set!)"
       - text: "Type: T-Shirt (click the first little picture of a t-shirt)"
       - text: "Color: White"

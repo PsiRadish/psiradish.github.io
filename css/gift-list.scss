@@ -41,6 +41,18 @@ p + ol
     padding-top: $font-size-small * $line-height-gift;
 }
 
+.sublist
+{
+    > li
+    {
+        margin-top: 3px;
+        
+        > p {
+            margin: 0;
+        }
+    }
+}
+
 ol
 {
     margin: 0;
@@ -68,10 +80,10 @@ ol
         }
     }
 }
-ol.sublist {
+ol.sublist
+{
     > li
     {
-        margin-top: 3px;
         counter-increment: sublist-num;
         
         &::before {
@@ -79,10 +91,6 @@ ol.sublist {
                         
             font-size: 80%;
             line-height: 1.375;
-        }
-        
-        > p {
-            margin: 0;
         }
     }
 }
@@ -147,6 +155,11 @@ ul
         
         visibility: hidden;
     }
+}
+ul.sublist
+{
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .emoji
