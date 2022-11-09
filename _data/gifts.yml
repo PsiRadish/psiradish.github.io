@@ -1,9 +1,70 @@
-# prescript:
-#   - text: All t-shirts size large, please.
-#   - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
+prescript:
+  - text: All t-shirts size large, please.
+  - text: (AND DON'T CHANGE THE COLORS OR ANYTHING!)
 current:
 # postscript:
 #   - text: "Look behind you, a three-headed monkey!"
+  - name: Harrow the Ninth (Hardcover)
+    link: "https://www.amazon.com/Harrow-Ninth-Locked-Tomb-Trilogy/dp/1250313228/"
+    description: Hardcover Book
+    price: $21.99
+    note:
+      emoji: ☝
+      text: Seriously, I want the hardcover.
+  - name: “Arcane Vi and Caitlyn” T-Shirt
+    link: "https://www.zazzle.com/arcane_vi_and_caitlyn_essential_t_shirt-235787661751027377"
+    description: Upper-torso apparel.
+    price: $19.09
+    note:
+      icon: info-circle
+      text: You'll need to click the [View Product Details] button the first time you visit the page.
+    osublist:
+      - text: "Size: Adult L"
+      - text: "Style: Basic Dark T-Shirt"
+      - text: "Color: Black"
+  - name: “Wherever you are light, this up and I'll find you” T-Shirt
+    link: "https://www.redbubble.com/i/t-shirt/Wherever-you-are-light-this-up-and-I_ll-find-you-by-BakulKaosID2/96231375.P0PKY"
+    description: Upper-torso apparel.
+    price: $19.82
+    osublist:
+      - text: "Color: Black"
+      - text: "Size: L"
+      - text: "Print Location: Front"
+  - name: “Piltover Academy Logo” T-Shirt
+    link: "https://www.redbubble.com/i/t-shirt/Piltover-Academy-Logo-by-Skella896/97666304.2OUYH"
+    description: Upper-torso apparel.
+    price: $16.99
+    osublist:
+      - text: "Color: Gold"
+      - text: "Size: L"
+      - text: "Print Location: Front"
+  - name: “The Last Drop” T-Shirt
+    link: "https://www.redbubble.com/i/t-shirt/The-Last-Drop-by-VirginiaRing/97545720.FQKHD"
+    description: Upper-torso apparel.
+    price: $16.99
+    osublist:
+      - text: "Color: Dark Grey"
+      - text: "Size: L"
+      - text: "Print Location: Front"
+  - name: “Arcane Science Fantasy Caitlyn” T-Shirt
+    link: "https://poshmark.com/listing/Arcane-Science-Fantasy-Caitlyn-Unisex-TShirt-61ceb1c8e0b7c79b3baf08cd#utm_source=gdm_unpaid&size_L"
+    description: Upper-torso apparel.
+    price: $18
+    osublist:
+      - text: "Size: L"
+  - name: Arcane Poster T-Shirt
+    link: "https://vuccie.com/product/arcane-lol-t-shirt-gifts/"
+    description: Upper-torso apparel.
+    price: $19.99
+    note:
+      icon: info-circle
+      text: You will need to set Fit Type and Type before the Color and Size options will appear.
+    osublist:
+      - text: "Fit Type: Men (⚠ defaults to Women, so remember to set!)"
+      - text: "Type: T-Shirt (click the first little picture of a t-shirt)"
+      - text: "Color: White"
+      - text: "Size: L"
+example:
   - name: Fire Logic
     link: "https://www.amazon.com/gp/product/B00E5LUOSI"
     description: Book
@@ -19,21 +80,6 @@ current:
     note:
       emoji: 👌
       text: I already have the 4th book (Air Logic), if you're wondering why I'm not asking for it.
-  - name: Gideon the Ninth (Hardcover)
-    link: "https://www.amazon.com/Gideon-Ninth-Tamsyn-Muir/dp/1250313198/"
-    description: Hardcover Book
-    price: $24.99
-    note:
-      emoji: ☝
-      text: Seriously, I want the hardcover.
-  - name: Harrow the Ninth (Hardcover)
-    link: "https://www.amazon.com/Harrow-Ninth-Locked-Tomb-Trilogy/dp/1250313228/"
-    description: Hardcover Book
-    price: $20.99
-    note:
-      emoji: ☝
-      text: Seriously, I want the hardcover.
-example:
   - name: Games from my Steam wishlist
     link: "http://steamcommunity.com/id/psiradish/wishlist/"
     description: PC games.
